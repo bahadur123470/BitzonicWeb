@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome icon link  -->
+    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind Css -->
+    <link href="../output.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <!-- title  -->
+    <title>Bitzonic - Portfolio</title>
+
+    <style>
+        body {
+            font-family: "Manrope", sans-serif;
+        }
+
+        @layer utilities {
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+ <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
+    <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
+        <div class="flex items-center h-[80px]">
+            <div class="shrink-0 w-48">
+                <a href="../index.html" class="-m-1.5 p-1.5">
+                    <img src="../assets/logo.png" alt="" class="w-40 md:w-44 lg:w-48" />
+                </a>
+            </div>
+
+            <div class="flex lg:hidden ml-auto">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex flex-1 justify-center">
+                <div class="flex space-x-12">
+                    <a href="./services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                    <a href="./portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                    <a href="./about.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
+                    <a href="./contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex w-48 justify-end lg:mr-6">
+                <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </div>
+    </nav>
+
+
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between max-h-30">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img src="../assets/logo1-removebg-preview.png" alt="" class="max-w-40 " />
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6 flex flex-col">
+
+                                    <a href="./services.html"
+                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                                    <a href="./portfolio.html"
+                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                                    <a href="./about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
+                                    <a href="./contact.html"
+                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="./contact.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
+                                    <button class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get in Touch</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+
+    <main class="mb-20">
+        <div
+            class="relative flex flex-col-reverse lg:flex-row items-center justify-center max-w-screen px-4 sm:px-10 bg-[url('../assets/hero-bg.svg')] bg-no-repeat bg-center object-center bg-cover h-[600px]">
+            <div class="bg-black/50 absolute top-0 h-full w-full"></div>
+            <!-- Left Section -->
+            <div
+                class="w-full lg:w-1/2 flex flex-col justify-center lg:items-start py-10 lg:py-20 px-4 sm:px-6 text-center lg:text-left z-2">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                    Our <span class="text-[#0ebab1]">Portfolio</span>
+                </h2>
+                <p class="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl text-white max-w-full lg:max-w-xl">
+                    Here at Bitzonic, we showcase our diverse projects that highlight creativity, innovation, and results. Each project reflects our expertise in design, development, and digital marketing, delivering solutions that make an impact for our clients.
+                </p>
+                <div class="mt-6 sm:mt-8">
+                    <button
+                        class="open-modal-btn inline-block px-6 py-3 lg:px-10 lg:py-4 text-base lg:text-lg font-medium text-white bg-[#0ebab1] rounded-md shadow transition duration-300 cursor-pointer">
+                        Schedule a Meeting
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Section (Form, hidden below large screens) -->
+            <div class="hidden lg:flex w-full lg:w-1/2 justify-end items-start py-10 lg:py-20 px-4 sm:px-6 z-2">
+                <div class="max-w-lg bg-white rounded-lg shadow-lg p-8">
+                    <form class="w-md space-y-6">
+                        <h3 class="text-3xl font-bold">Get in Touch </h3>
+                        <div>
+
+                            <input type="text" id="floating_first_name" placeholder="Full name" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+
+                        <div class="mb-5">
+
+                            <input type="email" id="floating_email" placeholder="Business Email" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+
+
+
+                        <div class="mb-5">
+                            <input type="number" id="floating_phone" placeholder="123-456-7890" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div class="mb-5">
+                            <textarea name="" id="" cols="30" rows="3" placeholder="Discribe your project needs"
+                                class="w-full border rounded-md border-gray-300 px-3 py-2"></textarea>
+
+                        </div>
+                        <button type="submit"
+                            class="w-full text-white bg-[#0ebab1] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 transition duration-300">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 px-14 mt-14">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-1.png" alt="DineTrack Product"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">DineTrack - Restaurant App</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button onclick="cardBtnOne('../assets/Restraunt-App.png', 'DineTrack: Restaurant Management App')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-2.png" alt="Helicopter Safety Driving App"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Helicopter Safety Driving App</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button
+                        onclick="cardBtnTwo('../assets/Helicopter-Safet-Driving-App.png', 'Helicopter: Safety Driving App')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-3.png" alt="Drasn Learning Platform"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Drasn - Innovative Learning
+                        Platform</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button onclick="cardBtnThree('../assets/Drasn-Application.png', 'Drasn: Application')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-4.png" alt="Healthcare App"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Healthcare App</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button onclick="cardBtnFour('../assets/HealthCare.png', 'Healthcare: Application')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-5.png" alt="Saint Academy Football Club"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Saint Academy Football Club</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button onclick="cardBtnFive('../assets/Saint.png', 'Saint Academy: Football Club')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative h-64 overflow-hidden bg-[#0ebab1]">
+                    <img src="../assets/iPhone-12-Pro-6.png" alt="Eagles Car Taxi App"
+                        class="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Eagles Car - Taxi App</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-sm sm:text-base">
+                        Discover new places with Mauritius. It guides you with GPS and talks about each spot. You can
+                        make your tour plans.
+                    </p>
+                    <button onclick="cardBtnSix('../assets/Eagles-Car-App.png', 'Eagles: Car App')"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-800 hover:bg-black hover:text-white bg-white transition duration-300">
+                        View Case Study
+                    </button>
+                </div>
+            </div>
+        </div>
+
+ <!-- View More Button -->
+<div class="flex justify-center mt-12">
+    <button
+        class="open-modal-btn px-8 py-3 border-2 border-[#0ebab1] text-[#0ebab1] hover:bg-[#0ebab1] hover:text-white font-semibold rounded-lg shadow-md transition duration-300 cursor-pointer">
+        View More
+    </button>
+</div>
+
+<!-- Modal Overlay -->
+<div
+    id="modalOverlay"
+    class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
+></div>
+
+<!-- Popup Modal -->
+<div
+    id="modal"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center"
+>
+    <div
+        class="bg-white w-[90%] max-w-lg rounded-md shadow-lg relative p-8"
+    >
+        <!-- Close button -->
+        <button
+            id="closeModal"
+            class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+        >
+            &times;
+        </button>
+        <h2 class="text-2xl font-bold text-center mb-3">Get in touch</h2>
+        <div class="w-12 h-[2px] bg-[#0ebab1] mx-auto mb-4"></div>
+        <p class="text-center text-gray-600 mb-6">
+            Fill out the form and get a free quote and specifications on your project!
+        </p>
+        <form class="space-y-4">
+            <div class="grid grid-cols-2 gap-3">
+                <input
+                    type="text"
+                    placeholder="Name"
+                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                    required
+                />
+                <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                />
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <input
+                    type="email"
+                    placeholder="Email"
+                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                    required
+                />
+                <input
+                    type="tel"
+                    placeholder="Phone"
+                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                    required
+                />
+            </div>
+            <textarea
+                placeholder="Message"
+                rows="4"
+                class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                required
+            ></textarea>
+            <button
+                type="submit"
+                class="block w-full border border-[#0ebab1] text-[#0ebab1] hover:bg-[#0ebab1] hover:text-white py-2 rounded transition"
+            >
+                Send
+            </button>
+        </form>
+    </div>
+</div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
+                    <span class="text-[#0ebab1] text-4xl">Together!</span>
+                </h2>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>+92 21 32624423</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>official@bitzonic.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mb-8 gap-6">
+                <a href="#" class=" hover:text-[#007bff]">
+                    <i class="fa-brands fa-facebook-f text-2xl"></i>
+                </a>
+                <a href="#" class=" hover:text-[#dc3545]">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class=" hover:text-[#6610f2]">
+                    <i class="fa-brands fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="#" class=" hover:text-[#007bff]">
+                    <i class="fa-brands fa-twitter text-2xl"></i>
+                </a>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm leading-relaxed">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Karachi</h3>
+                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
+
+                    <h3 class="font-bold text-lg mt-6 mb-4">Islamabad</h3>
+                    <p>
+                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
+                        Islamabad, Pakistan
+                    </p>
+
+                    <h3 class="font-bold text-lg mt-6 mb-4">New York</h3>
+                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Menu</h3>
+                    <ul>
+                        <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
+                        <li class="mb-2"><a href="./About.html" class="hover:text-[#0ebab1]">About</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-gray-400">Certifications</a>
+                        </li>
+                        <li class="mb-2"><a href="./contact.html" class="hover:text-[#0ebab1]">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Software Solutions & Services</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./01-web.html" class="hover:text-[#0ebab1]">Website
+                                Development</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Business Development</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Digital Marketing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Graphic Designing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Software-as-a-Service</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">SEO Expert</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Figma Designing</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Enterprise Solutions</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
+                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Js/portfolio.js"></script>
+
+
+</body>
+
+</html>
