@@ -12,9 +12,9 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "continue": true
-    }
+    { "src": "/assets/(.*)", "headers": { "cache-control": "max-age=31536000, immutable" } },
+    { "src": "/Js/(.*)", "headers": { "cache-control": "max-age=31536000, immutable" } },
+    { "src": "/pages/(.*)", "dest": "/pages/$1.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
