@@ -773,3 +773,25 @@ stepsMobile.forEach((step, index) => {
     });
 });
 });
+
+
+
+const openModalBtns = document.querySelectorAll(".open-modal-btn");
+const modal = document.getElementById("modal");
+const modalOverlay = document.getElementById("modalOverlay");
+const closeModal = document.getElementById("closeModal");
+
+openModalBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modalOverlay.classList.remove("hidden");
+    });
+    });
+
+const hideModal = () => {
+    modal.classList.add("hidden");
+    modalOverlay.classList.add("hidden");
+};
+
+closeModal.addEventListener("click", hideModal);
+modalOverlay.addEventListener("click", hideModal);
