@@ -133,27 +133,23 @@ initializeCustomCarousel(); // Call this to set up the carousel on page load
 
 const testimonials = [
     {
-        text: "TECHSTIRR went above and beyond my expectations. I engaged them to make a mobile app for my clients to use, and they did a fantastic job! Great job Frank!",
+        text: "Working with this team was a game changer for our business. They took the time to understand our workflow challenges and delivered a custom CRM solution that increased our productivity by 40%. The attention to detail and ongoing support has been exceptional. I cannot recommend them enough.",
         name: "A. Rodriguez",
-        role: "Marketing Manager",
         img: "../assets/testi-top-ico.png",
     },
     {
-        text: "Working with TECHSTIRR was a pleasure! They delivered our eCommerce website on time and exceeded expectations.",
+        text: "We were struggling with outdated systems that could not scale with our growth. The digital transformation they implemented streamlined our entire operation from inventory management to customer tracking. What impressed me most was how they made the transition seamless for our team. Six months in and we are seeing measurable ROI.",
         name: "John Doe",
-        role: "Business Owner",
         img: "../assets/testi-top-ico.png",
     },
     {
-        text: "Great communication and excellent results. Our new branding and app design look fantastic. Highly recommend them!",
+        text: "I have worked with several development teams over the years but none have matched this level of professionalism and creativity. They did not just build our web platform. They became true partners in our success. The solution they delivered is intuitive and scalable and exactly what we envisioned. Communication throughout the project was flawless.",
         name: "Sarah Lee",
-        role: "Creative Director",
         img: "../assets/testi-top-ico.png",
     },
     {
-        text: "Amazing experience! They handled our project professionally and were responsive throughout the process.",
+        text: "As a small business owner I was hesitant about investing in custom software but it has been worth every penny. They created an ecommerce solution that perfectly fits our needs without unnecessary complexity. The training and documentation they provided made adoption easy for my staff. Our online sales have tripled since launch.",
         name: "Michael Smith",
-        role: "Product Manager",
         img: "../assets/testi-top-ico.png",
     },
 ];
@@ -173,7 +169,6 @@ function createTestimonialSlides() {
                 <img src="${t.img}" alt="Quotation Icon" class=""> <!-- Added mx-auto to center image -->
                 <p class="text-[18px] font-medium my-6 max-w-[650px]">${t.text}</p>
                 <h3 class="text-[21px] text-[#0ebab1] font-bold uppercase ">${t.name}</h3>
-                <h4 class="text-[16px] text-[#676766] pt-2 uppercase">${t.role}</h4>
             </div>
         `;
         testimonialSlider.appendChild(slide);
