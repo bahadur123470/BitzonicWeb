@@ -649,11 +649,13 @@ let lastActiveIndexMobile = 0;
 
 // Gradient shades of #0ebab2 (teal) from lighter to darker
 const stepColors = [
-    { bg: 'bg-[#6fd9d4]', text: 'text-[#6fd9d4]', shadow: 'shadow-[#6fd9d4]/50' },  // Lighter
-    { bg: 'bg-[#3fccc5]', text: 'text-[#3fccc5]', shadow: 'shadow-[#3fccc5]/50' },  // Light
-    { bg: 'bg-[#0ebab2]', text: 'text-[#0ebab2]', shadow: 'shadow-[#0ebab2]/50' },  // Base
-    { bg: 'bg-[#0ba39c]', text: 'text-[#0ba39c]', shadow: 'shadow-[#0ba39c]/50' },  // Dark
-    { bg: 'bg-[#088c86]', text: 'text-[#088c86]', shadow: 'shadow-[#088c86]/50' }   // Darker
+    { bg: 'bg-[#6fd9d4]', text: 'text-[#6fd9d4]', shadow: 'shadow-[#6fd9d4]/50' },  
+    { bg: 'bg-[#3fccc5]', text: 'text-[#3fccc5]', shadow: 'shadow-[#3fccc5]/50' },  
+    { bg: 'bg-[#0ebab2]', text: 'text-[#0ebab2]', shadow: 'shadow-[#0ebab2]/50' },  
+    { bg: 'bg-[#0ba39c]', text: 'text-[#0ba39c]', shadow: 'shadow-[#0ba39c]/50' },  
+    { bg: 'bg-[#088c86]', text: 'text-[#088c86]', shadow: 'shadow-[#088c86]/50' },
+    { bg: 'bg-[#088c86]', text: 'text-[#088c86]', shadow: 'shadow-[#088c86]/50' }   
+
 ];
 
 function updateActiveStepAndImageMobile() {
