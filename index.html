@@ -62,47 +62,48 @@
                 opacity: 0;
             }
         }
-         .tech-item {
-        @apply flex items-center space-x-2 bg-gray-200 rounded-full 
-               px-3 py-2 w-full sm:w-1/2 lg:w-1/4
-               text-lg font-medium;
-    }
 
-    .tech-item img {
-        @apply h-[30px] w-[30px];
-    }
+        .tech-item {
+            @apply flex items-center space-x-2 bg-gray-200 rounded-full px-3 py-2 w-full sm:w-1/2 lg:w-1/4 text-lg font-medium;
+        }
 
-    /*  tech for small screens  */
+        .tech-item img {
+            @apply h-[30px] w-[30px];
+        }
 
-     .scrollbar-hide::-webkit-scrollbar {
+        /*  tech for small screens  */
+
+        .scrollbar-hide::-webkit-scrollbar {
             display: none;
         }
+
         .scrollbar-hide {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        
+
         /* Smooth scroll behavior */
         .scroll-smooth {
             scroll-behavior: smooth;
         }
-        
+
         /* Custom animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .step {
             animation: fadeInUp 0.6s ease-out;
         }
-        
+
         /* Touch feedback */
         .step:active {
             transform: scale(0.98);
@@ -111,13 +112,13 @@
 </head>
 
 <body>
-   <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
+    <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
         <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
             <div class="flex items-center h-[80px]">
                 <!-- Logo on the left -->
                 <div class="shrink-0 w-48">
                     <a href="./index.html" class="-m-1.5 p-1.5">
-<img src="./assets/logo.png" alt="Logo" loading="lazy" class="w-40 md:w-44 lg:w-48" />
+                        <img src="./assets/logo.png" alt="Logo" loading="eager" class="w-40 md:w-44 lg:w-48" />
                     </a>
                 </div>
 
@@ -137,16 +138,21 @@
                 <!-- Navigation links centered -->
                 <div class="hidden lg:flex flex-1 justify-center">
                     <div class="flex space-x-12">
-                        <a href="./pages/Services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
-                        <a href="./pages/Portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                        <a href="./pages/About.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
-                        <a href="./pages/Contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                        <a href="./pages/Services.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                        <a href="./pages/Portfolio.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                        <a href="./pages/About.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
+                        <a href="./pages/Contact.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
                     </div>
                 </div>
 
                 <!-- Get in Touch button on the right -->
                 <div class="hidden lg:flex w-48 justify-end lg:mr-6">
-                    <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get
+                        in Touch <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
         </nav>
@@ -160,7 +166,8 @@
                         <div class="flex items-center justify-between max-h-30">
                             <a href="#" class="-m-1.5 p-1.5">
                                 <span class="sr-only">Your Company</span>
-<img src="./assets/logo1-removebg-preview.png" alt="" loading="lazy" class="max-w-40 " />
+                                <img src="./assets/logo1-removebg-preview.png" alt="" loading="lazy"
+                                    class="max-w-40 " />
                             </a>
                             <button type="button" command="close" commandfor="mobile-menu"
                                 class="-m-2.5 rounded-md p-2.5 text-gray-700">
@@ -179,14 +186,17 @@
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
                                     <a href="./pages/portfolio.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                                    <a href="./pages/about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
+                                    <a href="./pages/about.html"
+                                        class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
                                     <a href="./pages/contact.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
                                 </div>
                                 <div class="py-6">
                                     <a href="./pages/contact.html"
                                         class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
-                                    <button class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get in Touch</button></a>
+                                        <button
+                                            class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get
+                                            in Touch</button></a>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +211,7 @@
 
         <!------------------------------------ Hero Section-------------------------------- -->
         <div id="Hero" class="relative flex justify-end items-end w-full overflow-hidden" style="height: 100vh;">
-<video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover" loading="lazy">
+            <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover" loading="lazy">
                 <source src="./assets/Cubix_Home_Hero_Video.webm" type="video/webm" />
             </video>
 
@@ -321,7 +331,8 @@
                             Whether you need a corporate website, an eCommerce platform, or a custom-built web
                             application, we combine creativity and technology to bring your vision to life.
                         </p>
-                        <a href="./pages/about.html" class="text-[#0ebab1] font-semibold hover:underline border-l-2 pl-2">Read More</a>
+                        <a href="./pages/about.html"
+                            class="text-[#0ebab1] font-semibold hover:underline border-l-2 pl-2">Read More</a>
                     </div>
 
                 </div>
@@ -334,9 +345,12 @@
                     <img src="./assets/Visions-image.png" alt="" class="h-60 pb-4" />
                     <p class="text-6xl font-bold pb-3">VISION</p>
                     <span class="text-center pb-3">
-                        Our vision is to become a leading global digital solutions agency, known for creativity, reliability, and excellence. We strive to create experiences and products that make a meaningful difference for our clients and their customers.
+                        Our vision is to become a leading global digital solutions agency, known for creativity,
+                        reliability, and excellence. We strive to create experiences and products that make a meaningful
+                        difference for our clients and their customers.
                     </span>
-                    <a href="./pages/about.html" class="text-green-600 font-semibold hover:underline border-l-2 pl-2">Read More</a>
+                    <a href="./pages/about.html"
+                        class="text-[#0ebab1] font-semibold hover:underline border-l-2 pl-2">Read More</a>
                 </div>
 
                 <!-- Mission -->
@@ -344,9 +358,12 @@
                     <img src="./assets/Visions-image-1.png" alt="" class="h-60 pb-4" />
                     <p class="text-6xl font-bold pb-3">MISSION</p>
                     <span class="text-center pb-3">
-                        Our mission is to help businesses achieve their full potential online by providing cutting-edge digital marketing, design, and development services. We aim to turn ideas into impactful solutions that drive measurable results.
+                        Our mission is to help businesses achieve their full potential online by providing cutting-edge
+                        digital marketing, design, and development services. We aim to turn ideas into impactful
+                        solutions that drive measurable results.
                     </span>
-                    <a href="./pages/about.html" class="text-green-600 font-semibold hover:underline border-l-2 pl-2">Read More</a>
+                    <a href="./pages/about.html"
+                        class="text-[#0ebab1] font-semibold hover:underline border-l-2 pl-2">Read More</a>
                 </div>
 
                 <!-- Values -->
@@ -354,9 +371,11 @@
                     <img src="./assets/Visions-image-2.png" alt="" class="h-60 pb-4" />
                     <p class="text-6xl font-bold pb-3">VALUES</p>
                     <span class="text-center pb-3">
-                        At Bitzonic, we value innovation, transparency, and client success above all. We are committed to delivering high-quality digital solutions that empower businesses to grow and thrive in a competitive market.
+                        At Bitzonic, we value innovation, transparency, and client success above all. We are committed
+                        to delivering high-quality digital solutions that empower businesses to grow and thrive in a
+                        competitive market.
                     </span>
-                    <a href="#" class="text-green-600 font-semibold hover:underline border-l-2 pl-2">Read More</a>
+                    <a href="#" class="text-[#0ebab1] font-semibold hover:underline border-l-2 pl-2">Read More</a>
                 </div>
             </div>
 
@@ -393,7 +412,8 @@
                         <div class="w-full lg:w-[80%] lg:h-[280px] relative text-center lg:text-left">
                             <h3 class="text-[#0ebab1] text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
                                 id="service-heading"></h3>
-                            <p class="text-white pt-3 text-[10px] md:text-[15px] lg:text-[20px] leading-[1.8]" id="service-para"></p>
+                            <p class="text-white pt-3 text-[10px] md:text-[15px] lg:text-[20px] leading-[1.8]"
+                                id="service-para"></p>
 
                             <div class="pl-4 py-2 flex justify-center lg:justify-start">
                                 <span class="text-[#0ebab1] text-[15px] hover:underline cursor-pointer">
@@ -404,10 +424,10 @@
                             <!-- Buttons -->
                             <div class="absolute -bottom-10 right-10 flex gap-3 z-50 justify-center lg:justify-end">
                                 <button id="prev-img-btn" class="bg-[#0ebab1]  p-2 rounded">
-<img src="./assets/service-less.png" alt="" loading="lazy" />
+                                    <img src="./assets/service-less.png" alt="" loading="lazy" />
                                 </button>
                                 <button id="next-img-btn" class="bg-[#0ebab1]  p-2 rounded">
-<img src="./assets/service-greater.png" alt="" loading="lazy" />
+                                    <img src="./assets/service-greater.png" alt="" loading="lazy" />
                                 </button>
                             </div>
                         </div>
@@ -455,168 +475,212 @@
         <!-- Product Content Section-->
         <section id="our-product" class="bg-black text-white overflow-x-hidden m-0">
 
-    <div class="w-screen flex justify-center items-start pt-[50px] min-h-screen">
-        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 lg:px-12 xl:px-25 flex flex-col">
+            <div class="w-screen flex justify-center items-start pt-[50px] min-h-screen">
+                <div class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 lg:px-12 xl:px-25 flex flex-col">
 
                     <!-- Heading -->
                     <div class="flex flex-col lg:flex-row justify-start items-start mb-[40px] lg:mb-[80px]">
-                        <h1 class="text-[2em] sm:text-[2.5em] lg:text-[3.5em] leading-tight mb-[10px] text-[#0ebab1] font-bold text-left">
+                        <h1
+                            class="text-[2em] sm:text-[2.5em] lg:text-[3.5em] leading-tight mb-[10px] text-[#0ebab1] font-bold text-left">
                             Our product development process
                         </h1>
                     </div>
 
                     <!-- 🔹 Desktop Layout -->
-                   <div class="hidden lg:flex flex-col lg:flex-row gap-10 relative">
-    <div class="flex-1 relative max-h-[80vh]">
-        <div
-            class="absolute left-[28px] top-0 w-[4px] h-full bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#06736f] rounded-full z-0 overflow-hidden">
-            <div id="line-progress"
-                class="absolute top-0 left-0 w-full h-0 bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#06736f] transition-all duration-300 ease-linear">
-            </div>
-        </div>
+                    <div class="hidden lg:flex flex-col lg:flex-row gap-10 relative">
+                        <div class="flex-1 relative max-h-[80vh]">
+                            <div
+                                class="absolute left-[28px] top-0 w-[4px] h-full bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#06736f] rounded-full z-0 overflow-hidden">
+                                <div id="line-progress"
+                                    class="absolute top-0 left-0 w-full h-0 bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#06736f] transition-all duration-300 ease-linear">
+                                </div>
+                            </div>
 
-        <div id="steps-container"
-            class="flex-1 relative overflow-y-auto max-h-[100vh] pb-[200px] scroll-smooth scrollbar-hide">
-            
-            <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
-                <div class="text-white/70 text-sm mb-1">01/05</div>
-                <h2 class="text-[2.8em] mb-[15px] font-bold">Create</h2>
-                <p class="text-[#ccc] text-[1.1em] leading-relaxed">
-                    We analyze your vision thoroughly to ensure the roadmap aligns perfectly with your goals.
-                </p>
-            </div>
+                            <div id="steps-container"
+                                class="flex-1 relative overflow-y-auto max-h-[100vh] pb-[200px] scroll-smooth scrollbar-hide">
 
-            <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
-                <div class="text-white/70 text-sm mb-1">02/05</div>
-                <h2 class="text-[2.8em] mb-[15px] font-bold">Design</h2>
-                <p class="text-[#ccc] text-[1.1em] leading-relaxed">
-                    Crafting an MVP that balances design, users, and branding for maximum value.
-                </p>
-            </div>
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">01/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Create</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        We analyze your vision thoroughly to ensure the roadmap aligns perfectly with
+                                        your goals.
+                                    </p>
+                                </div>
 
-            <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
-                <div class="text-white/70 text-sm mb-1">03/05</div>
-                <h2 class="text-[2.8em] mb-[15px] font-bold">Develop</h2>
-                <p class="text-[#ccc] text-[1.1em] leading-relaxed">
-                    Developing end-to-end solutions with an agile process for quality delivery.
-                </p>
-            </div>
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">02/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Design</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        Crafting an MVP that balances design, users, and branding for maximum value.
+                                    </p>
+                                </div>
 
-            <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
-                <div class="text-white/70 text-sm mb-1">04/05</div>
-                <h2 class="text-[2.8em] mb-[15px] font-bold">Test</h2>
-                <p class="text-[#ccc] text-[1.1em] leading-relaxed">
-                    Ensuring your product meets the highest standards through extensive QA and testing.
-                </p>
-            </div>
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">03/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Develop</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        Developing end-to-end solutions with an agile process for quality delivery.
+                                    </p>
+                                </div>
 
-            <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
-                <div class="text-white/70 text-sm mb-1">05/05</div>
-                <h2 class="text-[2.8em] mb-[15px] font-bold">Launch</h2>
-                <p class="text-[#ccc] text-[1.1em] leading-relaxed">
-                    Launching your product with strategic planning for maximum impact.
-                </p>
-            </div>
-        </div>
-    </div>
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">04/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Test</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        Ensuring your product meets the highest standards through extensive QA and
+                                        testing.
+                                    </p>
+                                </div>
 
-    <div class="flex-1 flex justify-center items-start sticky top-16 h-screen z-20">
-        <div
-            class="relative w-[400px] h-[600px] overflow-hidden rounded-[200px] mx-auto shadow-xl bg-[#0b1120]">
-            
-<img src="./assets/product-slider-1.webp"
-                loading="lazy" class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
-            <img src="./assets/product-slider-2.webp"
-                loading="lazy" class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
-            <img src="./assets/product-slider-3.webp"
-                loading="lazy" class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
-            <img src="./assets/product-slider-4.webp"
-                loading="lazy" class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
-            <img src="./assets/product-slider-6.webp"
-                loading="lazy" class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
-        </div>
-    </div>
-</div>
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">05/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Launch</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        Launching your product with strategic planning for maximum impact.
+                                    </p>
+                                </div>
+
+                                <div class="step py-[80px] pl-[60px] opacity-70 transition-all duration-500">
+                                    <div class="text-white/70 text-sm mb-1">06/06</div>
+                                    <h2 class="text-[2.8em] mb-[15px] font-bold">Support</h2>
+                                    <p class="text-[#ccc] text-[1.1em] leading-relaxed">
+                                        Launching your product with strategic planning for maximum impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 flex justify-center items-start sticky top-16 h-screen z-20">
+                            <div
+                                class="relative w-[400px] h-[600px] overflow-hidden rounded-[200px] mx-auto shadow-xl bg-[#0b1120]">
+
+                                <img src="./assets/product-slider-1.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                                <img src="./assets/product-slider-2.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                                <img src="./assets/product-slider-3.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                                <img src="./assets/product-slider-4.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                                <img src="./assets/product-slider-5.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                                <img src="./assets/product-slider-6.webp" loading="lazy"
+                                    class="step-image absolute w-full h-full object-cover lg:object-cover rounded-[200px]" />
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- 🔸 Mobile/Tablet Layout -->
-                   <!-- 🔸 Mobile / Tablet Left Side Scroll Version -->
-<div class="lg:hidden min-h-screen">
-       
-        <!-- Main Container -->
-        <div class="relative">
-            <!-- Progress Line Container -->
-            <div class="absolute left-4 sm:left-6 md:left-8 top-0 w-1 h-full z-0">
-                <div class="w-full h-full bg-white/10 rounded-full overflow-hidden">
-                    <div id="line-progress-mobile"
-                        class="absolute top-0 left-0 w-full h-0 bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#0a7f7a] transition-all duration-300 ease-out shadow-lg shadow-[#0ebab2]/50">
+                    <!-- 🔸 Mobile / Tablet Left Side Scroll Version -->
+                    <div class="lg:hidden min-h-screen">
+
+                        <!-- Main Container -->
+                        <div class="relative">
+                            <!-- Progress Line Container -->
+                            <div class="absolute left-4 sm:left-6 md:left-8 top-0 w-1 h-full z-0">
+                                <div class="w-full h-full bg-white/10 rounded-full overflow-hidden">
+                                    <div id="line-progress-mobile"
+                                        class="absolute top-0 left-0 w-full h-0 bg-gradient-to-b from-[#0ebab2] via-[#0c9d96] to-[#0a7f7a] transition-all duration-300 ease-out shadow-lg shadow-[#0ebab2]/50">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps Container -->
+                            <div id="steps-container-mobile"
+                                class="relative overflow-y-auto pb-24 h-screen scroll-smooth scrollbar-hide">
+
+                                <!-- Step 1: Create -->
+                                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-100 transition-all duration-500 relative"
+                                    style="transform: translateX(10px);">
+                                    <!-- Circle Indicator -->
+                                    <div
+                                        class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-[#0ebab2] rounded-full border-4 border-gray-900 shadow-lg shadow-[#0ebab2]/50 z-10 transition-all duration-300">
+                                    </div>
+
+                                    <div class="text-[#0ebab2] text-xs sm:text-sm font-semibold mb-2 tracking-wider">
+                                        STEP 01/05</div>
+                                    <h2
+                                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
+                                        Create</h2>
+                                    <p class="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
+                                        We analyze your vision thoroughly to ensure the roadmap aligns perfectly with
+                                        your goals.
+                                    </p>
+                                </div>
+
+                                <!-- Step 2: Design -->
+                                <div
+                                    class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
+                                    <div
+                                        class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300">
+                                    </div>
+
+                                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP
+                                        02/05</div>
+                                    <h2
+                                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">
+                                        Design</h2>
+                                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
+                                        Crafting an MVP that balances design, users, and branding for maximum value.
+                                    </p>
+                                </div>
+
+                                <!-- Step 3: Develop -->
+                                <div
+                                    class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
+                                    <div
+                                        class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300">
+                                    </div>
+
+                                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP
+                                        03/05</div>
+                                    <h2
+                                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">
+                                        Develop</h2>
+                                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
+                                        Developing end-to-end solutions with an agile process for quality delivery.
+                                    </p>
+                                </div>
+
+                                <!-- Step 4: Test -->
+                                <div
+                                    class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
+                                    <div
+                                        class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300">
+                                    </div>
+
+                                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP
+                                        04/05</div>
+                                    <h2
+                                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">
+                                        Test</h2>
+                                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
+                                        Ensuring your product meets the highest standards through extensive QA and
+                                        testing.
+                                    </p>
+                                </div>
+
+                                <!-- Step 5: Launch -->
+                                <div
+                                    class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
+                                    <div
+                                        class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300">
+                                    </div>
+
+                                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP
+                                        05/05</div>
+                                    <h2
+                                        class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">
+                                        Launch</h2>
+                                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
+                                        Launching your product with strategic planning for maximum impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Steps Container -->
-            <div id="steps-container-mobile"
-                class="relative overflow-y-auto pb-24 h-screen scroll-smooth scrollbar-hide">
-                
-                <!-- Step 1: Create -->
-                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-100 transition-all duration-500 relative"
-                    style="transform: translateX(10px);">
-                    <!-- Circle Indicator -->
-                    <div class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-[#0ebab2] rounded-full border-4 border-gray-900 shadow-lg shadow-[#0ebab2]/50 z-10 transition-all duration-300"></div>
-                    
-                    <div class="text-[#0ebab2] text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP 01/05</div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">Create</h2>
-                    <p class="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
-                        We analyze your vision thoroughly to ensure the roadmap aligns perfectly with your goals.
-                    </p>
-                </div>
-
-                <!-- Step 2: Design -->
-                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
-                    <div class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300"></div>
-                    
-                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP 02/05</div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">Design</h2>
-                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
-                        Crafting an MVP that balances design, users, and branding for maximum value.
-                    </p>
-                </div>
-
-                <!-- Step 3: Develop -->
-                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
-                    <div class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300"></div>
-                    
-                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP 03/05</div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">Develop</h2>
-                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
-                        Developing end-to-end solutions with an agile process for quality delivery.
-                    </p>
-                </div>
-
-                <!-- Step 4: Test -->
-                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
-                    <div class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300"></div>
-                    
-                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP 04/05</div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">Test</h2>
-                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
-                        Ensuring your product meets the highest standards through extensive QA and testing.
-                    </p>
-                </div>
-
-                <!-- Step 5: Launch -->
-                <div class="step py-16 sm:py-20 md:py-24 pl-12 sm:pl-16 md:pl-20 pr-4 sm:pr-6 md:pr-8 opacity-70 transition-all duration-500 relative">
-                    <div class="absolute left-[11px] sm:left-[19px] md:left-[27px] top-16 sm:top-20 md:top-24 w-6 h-6 bg-white/20 rounded-full border-4 border-gray-900 z-10 transition-all duration-300"></div>
-                    
-                    <div class="text-white/50 text-xs sm:text-sm font-semibold mb-2 tracking-wider">STEP 05/05</div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mb-3 sm:mb-4 leading-tight">Launch</h2>
-                    <p class="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-lg">
-                        Launching your product with strategic planning for maximum impact.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-        </section>        
+        </section>
 
         <!-- Technologies  -->
         <section id="technologies" class="bg-gray-100 ">
@@ -763,29 +827,25 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-1.svg" alt="React-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-1.svg" alt="React-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">React</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-2.svg" alt="Next-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-2.svg" alt="Next-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Next</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-3.svg" alt="Angular-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-3.svg" alt="Angular-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Angular</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-4.svg" alt="Vue-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-4.svg" alt="Vue-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Vue</span>
                                     </div>
 
@@ -798,15 +858,13 @@
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-6.svg" alt="HTML5-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-6.svg" alt="HTML5-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">HTML5</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-7.svg" alt="Css-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-7.svg" alt="Css-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Css</span>
                                     </div>
 
@@ -819,15 +877,13 @@
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-9.svg" alt="GraphQL-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/frontend-9.svg" alt="GraphQL-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">GraphQL</span>
                                     </div>
 
                                     <div
-                                        class="flex items-center space-x-5 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/frontend-10.svg" alt="Apollo-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
+                                        <img src="./assets/frontend-10.svg" alt="Apollo-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Apollo</span>
                                     </div>
 
@@ -852,57 +908,49 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-1.svg" alt="NodeJs-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-1.svg" alt="NodeJs-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Node Js</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-2.svg" alt="Python-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-2.svg" alt="Python-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Python</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-3.svg" alt="Scala-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-3.svg" alt="Scala-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Scala</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-4.svg" alt="Php-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-4.svg" alt="Php-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Php</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-5.svg" alt="Java-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-5.svg" alt="Java-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Java</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-6.svg" alt="Spring-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-6.svg" alt="Spring-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Spring</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-7.svg" alt="Net-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-7.svg" alt="Net-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">.Net</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/backend-8.svg" alt="Laravel-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/backend-8.svg" alt="Laravel-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Laravel</span>
                                     </div>
                                 </div>
@@ -915,29 +963,25 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/cms-1.svg" alt="Wordpress-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/cms-1.svg" alt="Wordpress-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Wordpress</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/cms-2.svg" alt="Magneto-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/cms-2.svg" alt="Magneto-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Magneto</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/cms-3.svg" alt="Shopify-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/cms-3.svg" alt="Shopify-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Shopify</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/cms-4.svg" alt="Contentful-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/cms-4.svg" alt="Contentful-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Contentful</span>
                                     </div>
 
@@ -952,22 +996,19 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/React-1.svg" alt="Redux-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/React-1.svg" alt="Redux-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Redux</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/React-2.svg" alt="Mobx-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/React-2.svg" alt="Mobx-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Mobx</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/React-3.svg" alt="RxJS-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/React-3.svg" alt="RxJS-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">RxJS</span>
                                     </div>
 
@@ -987,29 +1028,25 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Flutter-1.svg" alt="Bloc-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Flutter-1.svg" alt="Bloc-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Bloc</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Flutter-2.svg" alt="Dart-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Flutter-2.svg" alt="Dart-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Dart</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Flutter-3.svg" alt="MVVM-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Flutter-3.svg" alt="MVVM-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">MVVM</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Flutter-4.svg" alt="Rx-Dart-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Flutter-4.svg" alt="Rx-Dart-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">GetX</span>
                                     </div>
 
@@ -1024,22 +1061,19 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/DataBase-4.svg" alt="Mongodb-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/DataBase-4.svg" alt="Mongodb-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Mongodb</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/DataBase-5.svg" alt="MySQL-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/DataBase-5.svg" alt="MySQL-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">MySQL</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/DataBase-2.svg" alt="MsSQL-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/DataBase-2.svg" alt="MsSQL-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">MsSQL</span>
                                     </div>
 
@@ -1059,15 +1093,13 @@
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/DataBase-6.svg" alt="IBM-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/DataBase-6.svg" alt="IBM-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">IBM</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/DataBase-7.svg" alt="Redis-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/DataBase-7.svg" alt="Redis-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Redis</span>
                                     </div>
 
@@ -1084,50 +1116,43 @@
                                 <div class="flex flex-wrap gap-2 p-4 justify-start">
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4 space-x-2">
-                                        <img src="./assets/Cloud-1.svg" alt="Aws-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-1.svg" alt="Aws-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">AWS</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4 space-x-2">
-                                        <img src="./assets/Cloud-2.svg" alt="Appium-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-2.svg" alt="Appium-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Appium</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Cloud-3.svg" alt="Azure-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-3.svg" alt="Azure-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Azure</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4 ">
-                                        <img src="./assets/Cloud-5.svg" alt="Linode-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-5.svg" alt="Linode-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Linode</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-2 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Cloud-6.svg" alt="Firebase-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-6.svg" alt="Firebase-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Firebase</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Cloud-7.svg" alt="Oracle-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-7.svg" alt="Oracle-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Oracle</span>
                                     </div>
 
                                     <div
                                         class="flex items-center space-x-2 bg-gray-200 rounded-full px-3 md:px-6 w-full sm:w-1/2 lg:w-1/4">
-                                        <img src="./assets/Cloud-8.svg" alt="Heroku-Logo"
-                                            class="h-[35px] w-[35px]">
+                                        <img src="./assets/Cloud-8.svg" alt="Heroku-Logo" class="h-[35px] w-[35px]">
                                         <span class="text-lg font-medium">Heroku</span>
                                     </div>
                                 </div>
@@ -1147,12 +1172,13 @@
                     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Create a software development <span class="text-[#0ebab1]">Team</span> with us
                     </h2>
-                    <button id="openContactForm"
-                        class="mt-6 sm:mt-0 inline-flex items-center justify-center rounded-full bg-gray-900 px-5 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 shadow-lg md:shadow-none">
+                    <button id="openContactForm contactFormPanel"
+                        class="mt-6 sm:mt-0 inline-flex items-center justify-center rounded-full bg-gray-900 px-5 py-3 text-base font-medium text-white hover:bg-gray-700 focus:outline-none shadow-lg md:shadow-none">
                         Get a Quote
                     </button>
                 </div>
             </div>
+
 
             <!-- Off-canvas contact form -->
             <div id="contactFormPanel" class="fixed  overflow-hidden z-50  h-[50vh] top-[200px] hidden"
@@ -1233,10 +1259,10 @@
     <footer class=" py-10 bg-black text-white    ">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
+                <h2 class="text-3xl font-bold mb-8">LET'S CREATE SOMETHING
                     <span class="text-[#0ebab1] text-4xl">Together!</span>
                 </h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -1274,28 +1300,21 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm leading-relaxed ">
                 <div>
-                    <h3 class="font-bold text-lg mb-4">Karachi</h3>
-                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
+                    <h3 class="font-bold text-lg mb-4">Bahawalpur</h3>
+                    <p>Muslim Town, main muslim Rd,<br> Backside Darbar Mahal, Punjab 63100</p>
 
-                    <h3 class="font-bold text-lg mt-6 mb-4">Islamabad</h3>
-                    <p>
-                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
-                        Islamabad, Pakistan
-                    </p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4">New York</h3>
-                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
+                    <h3 class="font-bold text-lg mt-6 mb-4">Kentucky</h3>
+                    <p>171 Saint Mary, Kentucky,<br> Marion County, United States 40063</p>
                 </div>
 
                 <div>
                     <h3 class="font-bold text-lg mb-4">Menu</h3>
                     <ul>
                         <li class="mb-2"><a href="./index.html" class="hover:text-[#0ebab1]">Home</a></li>
-                        <li class="mb-2"><a href="./pages/About.html" class="hover:text-[#0ebab1]">About</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-gray-400">Certifications</a>
+                        <li class="mb-2"><a href="./pages/services.html" class="hover:text-[#0ebab1]">Services</a></li>
+                        <li class="mb-2"><a href="./pages/portfolio.html" class="hover:text-[#0ebab1]">Portfolio</a>
                         </li>
+                        <li class="mb-2"><a href="./pages/about.html" class="hover:text-[#0ebab1]">About</a></li>
                         <li class="mb-2"><a href="./pages/Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
                     </ul>
                 </div>
@@ -1330,63 +1349,90 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- <div>
-                    <h3 class="font-bold text-lg mb-4">Enterprise Solutions</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
-                        </li>
-                    </ul>
-                </div> -->
             </div>
 
             <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
-                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
+                <p>Copyright © 2025 Bitzonic | All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="./Js/Home.js"></script>
+    <!-- Get a Quote Popup -->
+    <div id="quotePopup" class="fixed inset-0 z-50 hidden">
+        <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity" id="quoteOverlay"></div>
+        <div class="fixed inset-0 flex items-center justify-center p-4">
+            <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+                <!-- Close button -->
+                <button type="button" id="closeQuotePopup"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-gray-700">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <span class="sr-only">Close</span>
+                </button>
 
-    <!-- Home Hero Button Js  -->
-    <!-- <script src=" ./js/home-hero-button.js"></script> -->
+                <!-- Popup content -->
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Get a Free Quote</h2>
+                    <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.
+                    </p>
 
-    <!-- Vision -->
-    <!-- <script src="./js/vision.js"> </script> -->
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0ebab1] focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0ebab1] focus:border-transparent">
+                            </div>
+                        </div>
 
-    <!-- Jurney -->
-    <!-- <script src="./js/journey.js"> </script> -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0ebab1] focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service
+                                    Needed</label>
+                                <select id="service" name="service" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0ebab1] focus:border-transparent">
+                                    <option value="">Select a service</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile App Development</option>
+                                    <option value="design">UI/UX Design</option>
+                                    <option value="marketing">Digital Marketing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
 
-    <!-- Service  -->
-    <!-- <script src="./js/service.js"> </script> -->
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project
+                                Details</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0ebab1] focus:border-transparent"></textarea>
+                        </div>
 
-    <!-- technologies  -->
-    <!-- <script src="./js/technologies.js"> </script> -->
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-[#0ebab1] text-white py-3 px-6 rounded-md font-medium hover:bg-[#0d9c92] transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0ebab1]">
+                                Get Your Free Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Product Section Js-->
-    <!-- <script src="./js/product.js"> </script> -->
+    <script src="./Js/Home.js" defer></script>
 
 </body>
 

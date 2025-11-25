@@ -37,6 +37,17 @@
                 scrollbar-width: none;
             }
         }
+        .portfolio {
+            background: hsla(177, 86%, 39%, 1);
+
+background: linear-gradient(135deg, hsla(177, 86%, 39%, 1) 0%, hsla(138, 74%, 70%, 1) 46%, hsla(182, 83%, 74%, 1) 90%);
+
+background: -moz-linear-gradient(135deg, hsla(177, 86%, 39%, 1) 0%, hsla(138, 74%, 70%, 1) 46%, hsla(182, 83%, 74%, 1) 90%);
+
+background: -webkit-linear-gradient(135deg, hsla(177, 86%, 39%, 1) 0%, hsla(138, 74%, 70%, 1) 46%, hsla(182, 83%, 74%, 1) 90%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0EBAB1", endColorstr="#78EB9A", GradientType=1 );
+        }
     </style>
 </head>
 
@@ -126,7 +137,7 @@
 
     <main class="mb-20">
         <div
-            class="relative flex flex-col-reverse lg:flex-row items-center justify-center max-w-screen px-4 sm:px-10 bg-[url('../assets/hero-bg.svg')] bg-no-repeat bg-center object-center bg-cover h-[600px]">
+            class="relative flex flex-col-reverse lg:flex-row items-center justify-center max-w-screen px-4 sm:px-10 portfolio bg-no-repeat bg-center object-center bg-cover h-[600px]">
             <div class="bg-black/50 absolute top-0 h-full w-full"></div>
             <!-- Left Section -->
             <div
@@ -147,8 +158,8 @@
 
             <!-- Right Section (Form, hidden below large screens) -->
             <div class="hidden lg:flex w-full lg:w-1/2 justify-end items-start py-10 lg:py-20 px-4 sm:px-6 z-2">
-                <div class="max-w-lg bg-white rounded-lg shadow-lg p-8">
-                    <form class="w-md space-y-6">
+                <div class="lg:max-w-md bg-white rounded-lg shadow-lg p-8">
+                    <form class="w-sm space-y-6">
                         <h3 class="text-3xl font-bold">Get in Touch </h3>
                         <div>
 
@@ -385,13 +396,13 @@
 
     </main>
 
-    <footer class="bg-black text-white py-10">
+    <footer class=" py-10 bg-black text-white    ">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
+                <h2 class="text-3xl font-bold mb-8">LET'S CREATE SOMETHING
                     <span class="text-[#0ebab1] text-4xl">Together!</span>
                 </h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -427,32 +438,23 @@
 
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm leading-relaxed">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm leading-relaxed ">
                 <div>
-                    <h3 class="font-bold text-lg mb-4">Karachi</h3>
-                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
+                    <h3 class="font-bold text-lg mb-4">Bahawalpur</h3>
+                    <p>Muslim Town, main muslim Rd,<br> Backside Darbar Mahal, Punjab 63100</p>
 
-                    <h3 class="font-bold text-lg mt-6 mb-4">Islamabad</h3>
-                    <p>
-                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
-                        Islamabad, Pakistan
-                    </p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4">New York</h3>
-                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
+                    <h3 class="font-bold text-lg mt-6 mb-4">Kentucky</h3>
+                    <p>171 Saint Mary, Kentucky,<br> Marion County, United States 40063</p>
                 </div>
 
                 <div>
                     <h3 class="font-bold text-lg mb-4">Menu</h3>
                     <ul>
                         <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
-                        <li class="mb-2"><a href="./About.html" class="hover:text-[#0ebab1]">About</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-gray-400">Certifications</a>
-                        </li>
-                        <li class="mb-2"><a href="./contact.html" class="hover:text-[#0ebab1]">Contact</a>
-                        </li>
+                        <li class="mb-2"><a href="./services.html" class="hover:text-[#0ebab1]">Services</a></li>
+                        <li class="mb-2"><a href="./portfolio.html" class="hover:text-[#0ebab1]">Portfolio</a></li>
+                        <li class="mb-2"><a href="./about.html" class="hover:text-[#0ebab1]">About</a></li>
+                        <li class="mb-2"><a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
                     </ul>
                 </div>
 
@@ -463,8 +465,7 @@
                             <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./01-web.html" class="hover:text-[#0ebab1]">Website
-                                Development</a>
+                            <a href="./pages/WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
                         </li>
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
@@ -487,40 +488,10 @@
                         </li>
                     </ul>
                 </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Enterprise Solutions</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
 
             <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
-                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
+                <p>Copyright © 2025 Bitzonic | All rights reserved.</p>
             </div>
         </div>
     </footer>

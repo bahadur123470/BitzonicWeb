@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
     <!-- font awesome icon link  -->
     <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind Css -->
-    <link href="../output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <title>About</title>
@@ -39,42 +39,46 @@
 </head>
 
 <body>
- <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
-    <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
-        <div class="flex items-center h-[80px]">
-            <div class="shrink-0 w-48">
-                <a href="../index.html" class="-m-1.5 p-1.5">
-<img src="../assets/logo.png" alt="" loading="lazy" class="w-40 md:w-44 lg:w-48" />
-                </a>
-            </div>
+    <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
+        <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
+            <div class="flex items-center h-[80px]">
+                <div class="shrink-0 w-48">
+                    <a href="../index.html" class="-m-1.5 p-1.5">
+                        <img src="../assets/logo.png" alt="" loading="lazy" class="w-40 md:w-44 lg:w-48" />
+                    </a>
+                </div>
 
-            <div class="flex lg:hidden ml-auto">
-                <button type="button" command="show-modal" commandfor="mobile-menu"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Open main menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6">
-                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
+                <div class="flex lg:hidden ml-auto">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
 
-            <div class="hidden lg:flex flex-1 justify-center">
-                <div class="flex space-x-12">
-                    <a href="./services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
-                    <a href="./portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                    <a href="./about.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
-                    <a href="./contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                <div class="hidden lg:flex flex-1 justify-center">
+                    <div class="flex space-x-12">
+                        <a href="./services.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                        <a href="./portfolio.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                        <a href="./about.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
+                        <a href="./contact.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex w-48 justify-end lg:mr-6">
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get
+                        in Touch <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
-
-            <div class="hidden lg:flex w-48 justify-end lg:mr-6">
-                <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch <span aria-hidden="true">&rarr;</span></a>
-            </div>
-        </div>
-    </nav>
-
+        </nav>
 
         <el-dialog>
             <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
@@ -84,7 +88,8 @@
                         <div class="flex items-center justify-between max-h-30">
                             <a href="#" class="-m-1.5 p-1.5">
                                 <span class="sr-only">Your Company</span>
-<img src="../assets/logo1-removebg-preview.png" alt="" loading="lazy" class="max-w-40 " />
+                                <img src="../assets/logo1-removebg-preview.png" alt="" loading="lazy"
+                                    class="max-w-40" />
                             </a>
                             <button type="button" command="close" commandfor="mobile-menu"
                                 class="-m-2.5 rounded-md p-2.5 text-gray-700">
@@ -99,19 +104,22 @@
                         <div class="mt-6 flow-root">
                             <div class="-my-6 divide-y divide-gray-500/10">
                                 <div class="space-y-2 py-6 flex flex-col">
-
                                     <a href="./services.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
                                     <a href="./portfolio.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                                    <a href="./about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
+                                    <a href="./about.html"
+                                        class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
                                     <a href="./contact.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
                                 </div>
                                 <div class="py-6">
                                     <a href="./contact.html"
                                         class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
-                                    <button class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get in Touch</button></a>
+                                        <button
+                                            class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">
+                                            Get in Touch
+                                        </button></a>
                                 </div>
                             </div>
                         </div>
@@ -122,139 +130,113 @@
     </header>
 
     <main>
-
         <div class="relative min-h-screen bg-gray-900 overflow-hidden">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0">
-<img src="../assets/bg-aboutself.jpg" alt="Office Background" loading="lazy"
-                    class="w-full h-full object-cover opacity-80">
+                <img src="../assets/bg-aboutself.jpg" alt="Office Background" loading="lazy"
+                    class="w-full h-full object-cover opacity-80" />
                 <div class="absolute inset-0 bg-black bg-transparent"></div>
             </div>
 
             <!-- Hero Content -->
             <div
                 class="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-80px)] text-center px-4 bg-tra">
-                <h1 class="text-6xl md:text-8xl font-bold text-white mb-6">About Us</h1>
-                <p class="text-md md:text-lg     text-white font-bold max-w-3xl mb-10 leading-relaxed">
-                    Bitzonic is a software and digital solutions company helping brands grow through technology and creativity. We specialize in Web & App Development, Digital Marketing, Meta Ads, and Brand Strategy. Our mission is to build smart systems and strong brands that drive real business results.
+                <h1 class="text-6xl md:text-8xl font-bold text-white mb-6">
+                    About Us
+                </h1>
+                <p class="text-md md:text-lg text-white font-bold max-w-3xl mb-10 leading-relaxed">
+                    Bitzonic is a software and digital solutions company helping brands
+                    grow through technology and creativity. We specialize in Web & App
+                    Development, Digital Marketing, Meta Ads, and Brand Strategy. Our
+                    mission is to build smart systems and strong brands that drive real
+                    business results.
                 </p>
                 <!-- Learn More Button -->
-            <div class="flex justify-center mt-12">
-                <button
-                    class="open-modal-btn inline-flex items-center px-6 py-2 border-2 border-[#0ebab1] text-white text-lg font-semibold rounded-lg hover:bg-[#0ebab1] transition duration-300 ease-in-out"
-                >
-                    Learn More
-                    <svg
-                    class="ml-3 w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        ></path>
-                    </svg>
-                </button>
+                <div class="flex justify-center mt-12">
+                    <button
+                        class="open-modal-btn inline-flex items-center px-6 py-2 border-2 border-[#0ebab1] text-white text-lg font-semibold rounded-lg hover:bg-[#0ebab1] transition duration-300 ease-in-out">
+                        Learn More
+                        <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Modal Overlay -->
+                <div id="modalOverlay" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40"></div>
+
+                <!-- Popup Modal -->
+                <div id="modal" class="hidden fixed inset-0 z-50 flex items-center justify-center">
+                    <div class="bg-white w-[90%] max-w-lg rounded-md shadow-lg relative p-8">
+                        <!-- Close button -->
+                        <button id="closeModal"
+                            class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold">
+                            &times;
+                        </button>
+                        <h2 class="text-2xl font-bold text-center mb-3">Get in touch</h2>
+                        <div class="w-12 h-[2px] bg-[#0ebab1] mx-auto mb-4"></div>
+                        <p class="text-center text-gray-600 mb-6">
+                            Fill out the form and get a free quote and specifications on
+                            your project!
+                        </p>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="text" placeholder="Name"
+                                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                                    required />
+                                <input type="text" placeholder="Last Name"
+                                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none" />
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="email" placeholder="Email"
+                                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                                    required />
+                                <input type="tel" placeholder="Phone"
+                                    class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                                    required />
+                            </div>
+                            <textarea placeholder="Message" rows="4"
+                                class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
+                                required></textarea>
+                            <button type="submit"
+                                class="block w-full border border-[#0ebab1] text-[#0ebab1] hover:bg-[#0ebab1] hover:text-white py-2 rounded transition">
+                                Send
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <!-- Modal Overlay -->
-<div
-  id="modalOverlay"
-  class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
-></div>
-
-<!-- Popup Modal -->
-<div
-  id="modal"
-  class="hidden fixed inset-0 z-50 flex items-center justify-center"
->
-  <div class="bg-white w-[90%] max-w-lg rounded-md shadow-lg relative p-8">
-    <!-- Close button -->
-    <button
-      id="closeModal"
-      class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold"
-    >
-      &times;
-    </button>
-    <h2 class="text-2xl font-bold text-center mb-3">Get in touch</h2>
-    <div class="w-12 h-[2px] bg-[#0ebab1] mx-auto mb-4"></div>
-    <p class="text-center text-gray-600 mb-6">
-      Fill out the form and get a free quote and specifications on your project!
-    </p>
-    <form class="space-y-4">
-      <div class="grid grid-cols-2 gap-3">
-        <input
-          type="text"
-          placeholder="Name"
-          class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
-          required
-        />
-        <input
-          type="text"
-          placeholder="Last Name"
-          class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
-        />
-      </div>
-      <div class="grid grid-cols-2 gap-3">
-        <input
-          type="email"
-          placeholder="Email"
-          class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
-          required
-        />
-        <input
-          type="tel"
-          placeholder="Phone"
-          class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
-          required
-        />
-      </div>
-      <textarea
-        placeholder="Message"
-        rows="4"
-        class="border border-gray-300 p-2 rounded w-full focus:ring-1 focus:ring-[#0ebab1] outline-none"
-        required
-      ></textarea>
-      <button
-        type="submit"
-        class="block w-full border border-[#0ebab1] text-[#0ebab1] hover:bg-[#0ebab1] hover:text-white py-2 rounded transition"
-      >
-        Send
-      </button>
-    </form>
-  </div>
-</div>
-
-
-            </div>
-
-        
         </div>
-        
 
-
-        <section class=" py-16 px-4 sm:px-6 lg:px-8">
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-6xl mx-auto">
                 <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 text-center">
-                    Leading <span class="text-[#0ebab1]">Software</span> Development Company
+                    Leading <span class="text-[#0ebab1]">Software</span> Development
+                    Company
                 </h1>
                 <div class="text-lg text-gray-700 leading-relaxed space-y-6">
                     <p class="text-center">
-                    At Bitzonic, we blend innovation with strategy to deliver complete digital and software solutions. 
-                    Our team designs scalable web and mobile applications while running impactful digital campaigns that boost visibility and sales. 
-                    We believe in solving real business problems through creative design, data-driven marketing, and modern technology. From startups to enterprises, 
-                    Bitzonic helps every brand move smarter, faster, and further in the digital world.
+                        At Bitzonic, we blend innovation with strategy to deliver complete
+                        digital and software solutions. Our team designs scalable web and
+                        mobile applications while running impactful digital campaigns that
+                        boost visibility and sales. We believe in solving real business
+                        problems through creative design, data-driven marketing, and
+                        modern technology. From startups to enterprises, Bitzonic helps
+                        every brand move smarter, faster, and further in the digital
+                        world.
                     </p>
                     <p class="text-center">
-                    Bitzonic is a creative tech agency combining software development with digital marketing expertise.
-                    We design scalable web solutions and run impactful campaigns that drive growth. Our focus is innovation,
-                    performance, and helping brands thrive in the digital age.
+                        Bitzonic is a creative tech agency combining software development
+                        with digital marketing expertise. We design scalable web solutions
+                        and run impactful campaigns that drive growth. Our focus is
+                        innovation, performance, and helping brands thrive in the digital
+                        age.
                     </p>
                     <p class="text-center">
-                        Bitzonic — where technology meets creativity to build and grow digital brands.
+                        Bitzonic — where technology meets creativity to build and grow
+                        digital brands.
+                    </p>
                 </div>
             </div>
         </section>
@@ -262,7 +244,8 @@
         <section class="bg-[url('../assets/bg-section-two.jpg')] bg-no-repeat bg-cover min-h-[55px] py-10">
             <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 lg:mx-32 mx-2">
                 <div class="px-[15px]">
-                    <img class="w-full opacity-50 rounded-t-2xl rounded-b-2xl border-2 border-[#0ebab1]" src="../assets/aboutleftside.jpg" alt="">
+                    <img class="w-full opacity-50 rounded-t-2xl rounded-b-2xl border-2 border-[#0ebab1]"
+                        src="../assets/aboutleftside.jpg" alt="" />
                 </div>
                 <div class="text-center px-[15px] flex items-center justify-center flex-col">
                     <div class="mt-6 flex items-center flex-col">
@@ -275,8 +258,8 @@
                             World’s Leading IT Company
                         </h3>
                         <p class="font-raleway text-white text-[14px]">
-                        Bitzonic builds brands and software that grow together.
-                        From code to campaigns — we turn ideas into digital impact.
+                            Bitzonic builds brands and software that grow together. From
+                            code to campaigns — we turn ideas into digital impact.
                         </p>
                         <!-- <img class="mt-6" src="../assets/partner-logo.png" alt=""> -->
                     </div>
@@ -287,7 +270,8 @@
         <section class="py-20 bg-transparent">
             <div class="md:mx-32 mx-4 text-secondary">
                 <div class="flex items-center justify-center">
-                    <h1 class="inline-block md:text-[45px] text-[28px] mb-10 font-extrabold relative" style="position: sticky; top: 80px; z-index: 10;">
+                    <h1 class="inline-block md:text-[45px] text-[28px] mb-10 font-extrabold relative"
+                        style="position: sticky; top: 80px">
                         Our Exclusive Team
                         <div class="absolute -bottom-4 left-[35%] w-20 h-px bg-[#7ccf9f]"></div>
                     </h1>
@@ -300,14 +284,19 @@
                                 <!-- Slides -->
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/6.png" alt="Waleed" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/6.png" alt="Waleed" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Muhammad Sami</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Founder & CEO</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Muhammad Sami
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Founder & CEO
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Guides the company’s vision and drives innovation-led growth.
+                                            Guides the company’s vision and drives innovation-led
+                                            growth.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -319,14 +308,19 @@
 
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/8.png" alt="Faheem" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/8.png" alt="Faheem" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Bahadur Ali</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Sr Web Developer</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Bahadur Ali
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Sr Web Developer
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Builds powerful, scalable, and visually engaging web solutions.
+                                            Builds powerful, scalable, and visually engaging web
+                                            solutions.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -338,14 +332,19 @@
 
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/10.png" alt="Danish" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/10.png" alt="Danish" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Maryam Imran</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Sales Manager</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Maryam Imran
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Sales Manager
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Leads client relationships and drives business expansion through strategic sales.
+                                            Leads client relationships and drives business expansion
+                                            through strategic sales.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -357,14 +356,19 @@
 
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/18.png" alt="Faras" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/18.png" alt="Faras" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Muhammad Tauseef</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Digital Marketer</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Muhammad Tauseef
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Digital Marketer
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Crafts impactful marketing campaigns that boost online presence.
+                                            Crafts impactful marketing campaigns that boost online
+                                            presence.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -376,14 +380,19 @@
 
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/19.png" alt="Faras" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/19.png" alt="Faras" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Muhammad Mohsin</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Web Developer</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Muhammad Mohsin
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Web Developer
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Transforms ideas into seamless, high-performing web experiences.
+                                            Transforms ideas into seamless, high-performing web
+                                            experiences.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -395,14 +404,19 @@
 
                                 <div
                                     class="w-60 mx-4 relative group shrink-0 hover:scale-[1.1] transition ease-in-out duration-300">
-<img src="../assets/team/15.png" alt="Faras" loading="lazy"
-                                        class="w-full h-[350px] object-cover">
+                                    <img src="../assets/team/15.png" alt="Faras" loading="lazy"
+                                        class="w-full h-[350px] object-cover" />
                                     <div
                                         class="absolute inset-0 bg-[#0ebab1]/80 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
-                                        <h3 class="text-white text-xl font-semibold">Muhammad Subhan</h3>
-                                        <h4 class="text-black font-medium text-sm mb-2">Mobile App Developer</h4>
+                                        <h3 class="text-white text-xl font-semibold">
+                                            Muhammad Subhan
+                                        </h3>
+                                        <h4 class="text-black font-medium text-sm mb-2">
+                                            Mobile App Developer
+                                        </h4>
                                         <p class="text-white text-[15px] mb-3">
-                                            Creates functional, sleek mobile experiences with strong UI focus.
+                                            Creates functional, sleek mobile experiences with strong
+                                            UI focus.
                                         </p>
                                         <div class="flex pt-2 border-t border-gray-400 items-end justify-end">
                                             <a href="#" target="_blank">
@@ -415,7 +429,8 @@
                             <!-- Dots -->
                             <div id="dots" class="flex justify-center gap-2 mt-8"></div>
                             <div class="flex justify-center mt-6">
-                                <button id="viewTeamBtn" class="inline-flex items-center px-6 py-2 border-2 border-[#0ebab1] text-[#0ebab1] font-semibold rounded-lg hover:bg-[#0ebab1] hover:text-white transition duration-300 ease-in-out">
+                                <button id="viewTeamBtn"
+                                    class="inline-flex items-center px-6 py-2 border-2 border-[#0ebab1] text-[#0ebab1] font-semibold rounded-lg hover:bg-[#0ebab1] hover:text-white transition duration-300 ease-in-out">
                                     View Team
                                 </button>
                             </div>
@@ -434,67 +449,42 @@
             <div id="testimonialDots" class="flex gap-2 absolute bottom-10"></div>
         </section>
 
-    <!-- Team Bottom Sheet and Backdrop -->
-<div id="teamSheetBackdrop" class="fixed inset-0 z-40 hidden">
-  <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-out"></div>
-</div>
+        <!-- Team Bottom Sheet and Backdrop -->
+        <div id="teamSheetBackdrop" class="fixed inset-0 z-40 hidden">
+            <div class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 ease-out"></div>
+        </div>
 
-<div
-  id="teamSheet"
-  class="fixed bottom-0 z-50 transform translate-y-full transition-transform duration-300 ease-out"
->
-  <div
-    class="bg-white rounded-t-[50px] shadow-xl px-4 md:px-8 pt-6 pb-6 max-h-[85vh] w-full overflow-y-auto"
-  >
-    <img
-      src="../assets/logo.png"
-      alt="logo"
-      class="mx-auto -mt-10 w-60 h-60 object-contain"
-    />
-    <div class="relative">
-      <h2
-        class="text-2xl md:text-3xl font-medium text-center -mt-10 pb-12 text-gray-900"
-      >
-        Our Exclusive Team
-      </h2>
-      <button
-        id="teamSheetClose"
-        class="absolute right-2 top-[-160%] transform -translate-y-1/2 text-gray-500 hover:text-gray-900 p-3 cursor-pointer"
-        aria-label="Close"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          class="w-7 h-7"
-        >
-          <path
-            d="M6 18 18 6M6 6l12 12"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-    </div>
-    <div
-      id="teamGrid"
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-10 md:gap-10 m-10"
-    ></div>
-  </div>
-</div>
-
-
+        <div id="teamSheet"
+            class="fixed bottom-0 z-50 transform translate-y-full transition-transform duration-300 ease-out">
+            <div class="bg-white rounded-t-[50px] shadow-xl px-4 md:px-8 pt-6 pb-6 max-h-[85vh] w-full overflow-y-auto">
+                <img src="../assets/logo.png" alt="logo" class="mx-auto -mt-10 w-60 h-60 object-contain" />
+                <div class="relative">
+                    <h2 class="text-2xl md:text-3xl font-medium text-center -mt-10 pb-12 text-gray-900">
+                        Our Exclusive Team
+                    </h2>
+                    <button id="teamSheetClose"
+                        class="absolute right-2 top-[-160%] transform -translate-y-1/2 text-gray-500 hover:text-gray-900 p-3 cursor-pointer"
+                        aria-label="Close">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-7 h-7">
+                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="teamGrid"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-10 md:gap-10 m-10">
+                </div>
+            </div>
+        </div>
     </main>
 
-
-    <footer class="bg-black text-white py-10">
+    <footer class="py-10 bg-black text-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
+                <h2 class="text-3xl font-bold mb-8">
+                    LET'S CREATE SOMETHING
                     <span class="text-[#0ebab1] text-4xl">Together!</span>
                 </h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-300">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -515,57 +505,66 @@
             </div>
 
             <div class="flex justify-center mb-8 gap-6">
-                <a href="#" class="text-gray-400 hover:text-[#007bff]">
+                <a href="#" class="hover:text-[#007bff]">
                     <i class="fa-brands fa-facebook-f text-2xl"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-[#dc3545]">
+                <a href="#" class="hover:text-[#dc3545]">
                     <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-[#6610f2]">
+                <a href="#" class="hover:text-[#6610f2]">
                     <i class="fa-brands fa-linkedin-in text-2xl"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-[#007bff]">
+                <a href="#" class="hover:text-[#007bff]">
                     <i class="fa-brands fa-twitter text-2xl"></i>
                 </a>
-
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm leading-relaxed text-gray-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-bold text-lg mb-4 text-white">Karachi</h3>
-                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4 text-white">Islamabad</h3>
+                    <h3 class="font-bold text-lg mb-4">Bahawalpur</h3>
                     <p>
-                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
-                        Islamabad, Pakistan
+                        Muslim Town, main muslim Rd,<br />
+                        Backside Darbar Mahal, Punjab 63100
                     </p>
 
-                    <h3 class="font-bold text-lg mt-6 mb-4 text-white">New York</h3>
-                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
+                    <h3 class="font-bold text-lg mt-6 mb-4">Kentucky</h3>
+                    <p>
+                        171 Saint Mary, Kentucky,<br />
+                        Marion County, United States 40063
+                    </p>
                 </div>
 
                 <div>
-                    <h3 class="font-bold text-lg mb-4 text-white">Menu</h3>
+                    <h3 class="font-bold text-lg mb-4">Menu</h3>
                     <ul>
-                        <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
-                        <li class="mb-2"><a href="./About.html" class="hover:text-[#0ebab1]">About</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
                         <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Certifications</a>
+                            <a href="../index.html" class="hover:text-[#0ebab1]">Home</a>
                         </li>
-                        <li class="mb-2"><a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
+                        <li class="mb-2">
+                            <a href="./services.html" class="hover:text-[#0ebab1]">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./portfolio.html" class="hover:text-[#0ebab1]">Portfolio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./about.html" class="hover:text-[#0ebab1]">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-bold text-lg mb-4 text-white">Software Solutions & Services</h3>
+                    <h3 class="font-bold text-lg mb-4">
+                        Software Solutions & Services
+                    </h3>
                     <ul>
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
+                            <a href="./pages/WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
                         </li>
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
@@ -582,55 +581,23 @@
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Software-as-a-Service</a>
                         </li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">SEO Expert</a></li>
+                        <li class="mb-2">
+                            <a href="#" class="hover:text-[#0ebab1]">SEO Expert</a>
+                        </li>
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Figma Designing</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4 text-white">Enterprise Solutions</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
-                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
+                <p>Copyright © 2025 Bitzonic | All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-
-
- 
-
-<script src="../Js/about.js"></script>
+    <script src="../Js/about.js"></script>
 </body>
 
 </html>

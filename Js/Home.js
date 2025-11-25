@@ -358,48 +358,93 @@ const stepsContainer = document.getElementById('steps-container');
 const steps = document.querySelectorAll('.step');
 const images = document.querySelectorAll('.step-image');
 const line = document.getElementById('line-progress');
-const TOTAL_STEPS = steps.length;
+const TOTAL_STEPS = Math.min(steps.length, images.length); // Use the smaller of steps or images count
 
 let currentActiveIndex = 0;
+
+// Initialize first image as active
+if (images.length > 0) {
+    images.forEach((img, index) => {
+        if (index === 0) {
+            img.style.opacity = '1';
+            img.style.transform = 'scale(1)';
+            img.style.zIndex = '5';
+        } else {
+            img.style.opacity = '0';
+            img.style.zIndex = '0';
+        }
+    });
+}
+
+// Initialize first step as active
+if (steps.length > 0) {
+    steps.forEach((step, index) => {
+        if (index === 0) {
+            step.classList.add('opacity-100');
+            step.style.transform = 'translateX(10px)';
+            step.style.color = 'white';
+        } else {
+            step.classList.remove('opacity-100');
+            step.classList.add('opacity-70');
+            step.style.transform = 'translateX(0)';
+            step.style.color = '';
+        }
+    });
+}
 
 /**
  * Updates the visual state of steps and images.
  * @param {number} newIndex - The index of the step that should now be active.
  */
 function updateVisualState(newIndex) {
+    // Ensure the index is within bounds
+    newIndex = Math.max(0, Math.min(newIndex, TOTAL_STEPS - 1));
+    
     // Only update if the active index has truly changed
     if (newIndex === currentActiveIndex) {
         updateProgressLine();
         return;
     }
 
-    console.log("Changing active index from", currentActiveIndex, "to", newIndex); // Debug log
+    console.log("Changing active index from", currentActiveIndex, "to", newIndex);
 
     currentActiveIndex = newIndex;
 
     // --- 1. Update Step Highlighting (Left Column) ---
     steps.forEach((step, i) => {
+        if (!step) return;
+        
         const isActive = (i === newIndex);
 
-        step.classList.toggle('opacity-100', isActive);
-        step.classList.toggle('opacity-70', !isActive);
-
-        // Apply activation/deactivation visual effect
-        step.style.transform = isActive ? "translateX(10px)" : "translateX(0)";
-
-        // Set all active steps text color white including last step
-        step.style.color = isActive ? "white" : "";
+        if (isActive) {
+            step.classList.add('opacity-100');
+            step.classList.remove('opacity-70');
+            step.style.transform = "translateX(10px)";
+            step.style.color = "white";
+        } else {
+            step.classList.remove('opacity-100');
+            step.classList.add('opacity-70');
+            step.style.transform = "translateX(0)";
+            step.style.color = "";
+        }
     });
 
     // --- 2. Update Image Display (Right Column) ---
     images.forEach((img, i) => {
+        if (!img) return;
+        
         const isActive = (i === newIndex);
-
-        img.style.opacity = isActive ? "1" : "0";
-        img.style.transform = isActive ? "scale(1)" : "scale(1.05)";
-        img.style.zIndex = isActive ? "5" : "0";
-
-        img.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+        
+        if (isActive) {
+            img.style.opacity = "1";
+            img.style.transform = "scale(1)";
+            img.style.zIndex = "5";
+            img.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+        } else {
+            img.style.opacity = "0";
+            img.style.transform = "scale(1.05)";
+            img.style.zIndex = "0";
+        }
     });
 
     // --- 3. Update Progress Line ---
@@ -590,12 +635,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton.addEventListener('click', closeForm);
     overlay.addEventListener('click', closeForm); // Close when clicking outside
 });
-
-
-
-
-
-
 
 
 // ---------------------

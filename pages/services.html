@@ -40,41 +40,46 @@
 </head>
 
 <body>
-<header class="bg-white sticky top-0 z-50 shadow-xl px-0">
-    <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
-        <div class="flex items-center h-[80px]">
-            <div class="shrink-0 w-48">
-                <a href="../index.html" class="-m-1.5 p-1.5">
-                    <img src="../assets/logo.png" alt="" class="w-40 md:w-44 lg:w-48" />
-                </a>
-            </div>
+    <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
+        <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
+            <div class="flex items-center h-[80px]">
+                <div class="shrink-0 w-48">
+                    <a href="../index.html" class="-m-1.5 p-1.5">
+                        <img src="../assets/logo.png" alt="" class="w-40 md:w-44 lg:w-48" />
+                    </a>
+                </div>
 
-            <div class="flex lg:hidden ml-auto">
-                <button type="button" command="show-modal" commandfor="mobile-menu"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Open main menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6">
-                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
+                <div class="flex lg:hidden ml-auto">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
 
-            <div class="hidden lg:flex flex-1 justify-center">
-                <div class="flex space-x-12">
-                    <a href="./services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
-                    <a href="./portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                    <a href="./about.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
-                    <a href="./contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                <div class="hidden lg:flex flex-1 justify-center">
+                    <div class="flex space-x-12">
+                        <a href="./services.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                        <a href="./portfolio.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                        <a href="./about.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
+                        <a href="./contact.html"
+                            class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex w-48 justify-end lg:mr-6">
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get
+                        in Touch <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </div>
-
-            <div class="hidden lg:flex w-48 justify-end lg:mr-6">
-                <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch <span aria-hidden="true">&rarr;</span></a>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
 
         <el-dialog>
@@ -105,14 +110,17 @@
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
                                     <a href="./portfolio.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                                    <a href="./about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
+                                    <a href="./about.html"
+                                        class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
                                     <a href="./contact.html"
                                         class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
                                 </div>
                                 <div class="py-6">
                                     <a href="./contact.html"
                                         class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
-                                    <button class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get in Touch</button></a>
+                                        <button
+                                            class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get
+                                            in Touch</button></a>
                                 </div>
                             </div>
                         </div>
@@ -122,132 +130,135 @@
         </el-dialog>
     </header>
 
-   <main class="">
-   <!-- Hero section -->
-<section
-    class="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-10 lg:px-30 hero-gradient overflow-hidden h-screen bg-[radial-gradient(circle,_#fff_0%,_#f0f0f0_100%)]">
+    <main class="">
+        <!-- Hero section -->
+        <section
+            class="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-10 lg:px-30 hero-gradient overflow-hidden h-screen bg-[radial-gradient(circle,_#fff_0%,_#f0f0f0_100%)]">
 
-    <!-- Left Floating Ball -->
-    <img src="../assets/left-floadting-ball.webp" alt="Floating Ball"
-        class="absolute -left-10 md:-left-14 top-1/10 w-[100px] md:w-[120px] lg:w-[150px] floating opacity-90 animate-bounce-slow lg:block">
+            <!-- Left Floating Ball -->
+            <img src="../assets/left-floadting-ball.webp" alt="Floating Ball"
+                class="absolute -left-10 md:-left-14 top-1/10 w-[100px] md:w-[120px] lg:w-[150px] floating opacity-90 animate-bounce-slow lg:block">
 
-    <!-- Left Content -->
+            <!-- Left Content -->
 
-<div class="flex flex-col justify-center h-screen w-full z-10 lg:px-20 md:px-10">
-    <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black text-left md:text-center leading-tight md:leading-snug lg:leading-snug xl:leading-tight mb-8">
-        <span class="text-[#0ebab1]">Business</span> through<br>
-        <span class="block lg:ml-10 md:ml-8">Accelerated Digital</span>
-        <span class="block xl:mr-82 lg:mr-68 md:mr-54">Services</span>
-    </h1>
-    <p class=" text-black mt-5 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:text-center ">
-    Achieve business goals and meet user satisfaction <br> by developing seamless and intuitive products.
-    </p>
-</div>
+            <div class="flex flex-col justify-center h-screen w-full z-10 lg:px-20 md:px-10">
+                <h1
+                    class="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black text-left md:text-center leading-tight md:leading-snug lg:leading-snug xl:leading-tight mb-8">
+                    <span class="text-[#0ebab1]">Business</span> through<br>
+                    <span class="block lg:ml-10 md:ml-8">Accelerated Digital</span>
+                    <span class="block xl:mr-82 lg:mr-68 md:mr-54">Services</span>
+                </h1>
+                <p class=" text-black mt-5 text-md md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl md:text-center ">
+                    Achieve business goals and meet user satisfaction <br> by developing seamless and intuitive
+                    products.
+                </p>
+            </div>
 
-    <!-- Right Image / 3D Hand and Shapes -->
-    <!-- HIDDEN on screens smaller than large (lg), visible on large and up -->
-    <div class="absolute -right-150 bottom-20 mt-10 md:mt-0 lg:flex justify-center md:justify-end w-full md:w-[50%] z-10 hidden ">
-        <img src="../assets/service-hero.webp" alt="3D Hand"
-            class="w-[550px] sm:w-[650px] lg:w-[450px]">
-    </div>
+            <!-- Right Image / 3D Hand and Shapes -->
+            <!-- HIDDEN on screens smaller than large (lg), visible on large and up -->
+            <div
+                class="absolute -right-150 bottom-20 mt-10 md:mt-0 lg:flex justify-center md:justify-end w-full md:w-[50%] z-10 hidden ">
+                <img src="../assets/service-hero.webp" alt="3D Hand" class="w-[550px] sm:w-[650px] lg:w-[450px]">
+            </div>
 
-</section>
+        </section>
 
         <!-- Services Section -->
         <div class="container mx-auto px-6 sm:px-10 py-16">
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter mb-5 text-gray-900">Services we provide</h2>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tighter mb-5 text-gray-900">Services we
+                provide</h2>
 
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mt-10">
                 <!-- Left Side: Image -->
                 <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                    <img class="rounded-lg max-w-full h-full object-cover"
-                        src="../assets/service3.png" alt="Frequently Asked Questions"  width="100%"/>
+                    <img class="rounded-lg max-w-full h-full object-cover" src="../assets/service3.png"
+                        alt="Frequently Asked Questions" width="100%" />
                 </div>
 
                 <!-- Right Side: FAQs -->
                 <div class="w-full lg:w-1/2">
                     <div class="space-y-6">
-                <div class="border-b border-gray-200 pb-4">
-                <button
-                    class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                    aria-expanded="false"
-                >
-                    SaaS Development
-                    <span class="faq-icon text-gray-900">+</span>
-                </button>
-                <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                    Build scalable, secure, and high-performance SaaS products tailored to business needs. From idea to deployment, I deliver solutions that grow with your users.
-                </p>
+                        <div class="border-b border-gray-200 pb-4">
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                SaaS Development
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Build scalable, secure, and high-performance SaaS products tailored to business needs.
+                                From idea to deployment, I deliver solutions that grow with your users.
+                            </p>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                Mobile Application Development
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Develop fast, responsive, and user-friendly mobile apps for iOS and Android. Scalable
+                                apps built with modern technology and clean architecture.
+                            </p>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                UI/UX Design
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Craft intuitive and modern user experiences that drive engagement and enhance usability.
+                                Designs focused on clarity, simplicity, and conversion.
+
+                            </p>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                E-commerce Development
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Create powerful, conversion-focused online stores with seamless user journeys. From
+                                product setup to integrations, I build stores that sell.
+                            </p>
+                        </div>
+
+                        <div class="border-b border-gray-200 pb-4">
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                Social Media Marketing
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Grow your brand across social platforms with strategic content, paid ads, and audience
+                                engagement. Turning followers into real customers.
+                            </p>
+                        </div>
+
+                        <div>
+                            <button
+                                class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
+                                aria-expanded="false">
+                                SEO (Search Engine Optimization)
+                                <span class="faq-icon text-gray-900">+</span>
+                            </button>
+                            <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
+                                Optimize your website to rank higher, attract organic traffic, and convert more
+                                customers. Data-driven strategies designed for long-term visibility.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
-
-                <div class="border-b border-gray-200 pb-4">
-                <button
-                    class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                    aria-expanded="false"
-                >
-                    Mobile Application Development
-                    <span class="faq-icon text-gray-900">+</span>
-                </button>
-                <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                    Develop fast, responsive, and user-friendly mobile apps for iOS and Android. Scalable apps built with modern technology and clean architecture.
-                </p>
-                </div>
-
-                <div class="border-b border-gray-200 pb-4">
-                <button
-                    class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                    aria-expanded="false"
-                >
-                    UI/UX Design
-                    <span class="faq-icon text-gray-900">+</span>
-                </button>
-                <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                    Craft intuitive and modern user experiences that drive engagement and enhance usability. Designs focused on clarity, simplicity, and conversion.
-
-                </p>
-                </div>
-
-                <div class="border-b border-gray-200 pb-4">
-                <button
-                    class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                    aria-expanded="false"
-                >
-                    E-commerce Development
-                    <span class="faq-icon text-gray-900">+</span>
-                </button>
-                <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                    Create powerful, conversion-focused online stores with seamless user journeys. From product setup to integrations, I build stores that sell.
-                </p>
-                </div>
-
-                <div class="border-b border-gray-200 pb-4">
-                <button
-                    class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                    aria-expanded="false"
-                >
-                    Social Media Marketing
-                    <span class="faq-icon text-gray-900">+</span>
-                </button>
-                <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                    Grow your brand across social platforms with strategic content, paid ads, and audience engagement. Turning followers into real customers.
-                </p>
-                </div>
-
-                <div>
-                    <button
-                        class="flex justify-between items-center w-full text-left text-xl sm:text-2xl lg:text-5xl mb-3 font-bold leading-6 text-[#0ebab1] faq-question"
-                        aria-expanded="false"
-                    >
-                        SEO (Search Engine Optimization)
-                        <span class="faq-icon text-gray-900">+</span>
-                    </button>
-                    <p class="mt-2 text-base sm:text-lg hidden text-gray-600 faq-answer">
-                        Optimize your website to rank higher, attract organic traffic, and convert more customers. Data-driven strategies designed for long-term visibility.
-                    </p>
-                </div>
-
-            </div>
-            </div>
 
             </div>
         </div>
@@ -255,35 +266,45 @@
         <!-- Cubix Guarantees Section -->
         <div class="py-10 sm:py-15 px-2 sm:4 ">
             <div class="mx-auto max-w-7xl px-4 lg:px-8">
-                <h2 class="text-4xl sm:text-6xl lg:text-7xl font-semibold mb-5 tracking-tighter text-gray-900 ">Bitzonic guarantees</h2>
+                <h2 class="text-4xl sm:text-6xl lg:text-7xl font-semibold mb-5 tracking-tighter text-gray-900 ">Bitzonic
+                    guarantees</h2>
                 <div class="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
                     <!-- Card 1: High-Quality Practices -->
                     <div class="rounded-2xl border border-gray-200 p-8 shadow-sm">
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl leading-7 font-bold text-gray-900 mb-4">
+                        <h3
+                            class="text-2xl sm:text-3xl lg:text-4xl leading-7 md:leading-9 font-bold text-gray-900 mb-4">
                             Create Experiences That Convert
                         </h3>
                         <p class="mt-4 text-base leading-6 text-gray-600">
-                            Our UI/UX and ecommerce expertise helps you deliver smooth, intuitive, and conversion-focused digital experiences. We design interfaces and online stores that keep users engaged and turn visitors into loyal customers.
+                            Our UI/UX and ecommerce expertise helps you deliver smooth, intuitive, and
+                            conversion-focused digital experiences. We design interfaces and online stores that keep
+                            users engaged and turn visitors into loyal customers.
                         </p>
                     </div>
 
                     <!-- Card 2: Real-estate Software -->
                     <div class="rounded-2xl border border-gray-200 p-8 shadow-sm">
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl leading-7 font-bold text-gray-900 mb-4">
+                        <h3
+                            class="text-2xl sm:text-3xl lg:text-4xl leading-7 md:leading-9 font-bold text-gray-900 mb-4">
                             Build Powerful Products That Scale
                         </h3>
                         <p class="mt-4 text-base leading-6 text-gray-600">
-                            We develop fast, secure, and scalable SaaS platforms and mobile applications tailored to your business needs. Our technical expertise transforms your ideas into high-quality digital products that boost efficiency and long-term growth.
+                            We develop fast, secure, and scalable SaaS platforms and mobile applications tailored to
+                            your business needs. Our technical expertise transforms your ideas into high-quality digital
+                            products that boost efficiency and long-term growth.
                         </p>
                     </div>
 
                     <!-- Card 3: Strategic Partnerships -->
                     <div class="rounded-2xl border border-gray-200 p-8 shadow-sm">
-                        <h3 class="text-2xl sm:text-3xl lg:text-4xl leading-7 font-bold text-gray-900 mb-4">
+                        <h3
+                            class="text-2xl sm:text-3xl lg:text-4xl leading-7 md:leading-9 font-bold text-gray-900 mb-4">
                             Grow Your Brand With Smart Marketing
                         </h3>
                         <p class="mt-4 text-base leading-6 text-gray-600">
-                            Our digital marketing and SEO strategies help your brand reach the right audience and generate real results. We increase your visibility, drive qualified traffic, and improve conversions through data-driven planning.
+                            Our digital marketing and SEO strategies help your brand reach the right audience and
+                            generate real results. We increase your visibility, drive qualified traffic, and improve
+                            conversions through data-driven planning.
                         </p>
                     </div>
                 </div>
@@ -319,13 +340,13 @@
     </main>
 
 
-    <footer class=" py-10 bg-black text-white ">
+    <footer class=" py-10 bg-black text-white    ">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
+                <h2 class="text-3xl font-bold mb-8">LET'S CREATE SOMETHING
                     <span class="text-[#0ebab1] text-4xl">Together!</span>
                 </h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                     <div class="flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -361,30 +382,22 @@
 
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm leading-relaxed">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm leading-relaxed ">
                 <div>
-                    <h3 class="font-bold text-lg mb-4">Karachi</h3>
-                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
+                    <h3 class="font-bold text-lg mb-4">Bahawalpur</h3>
+                    <p>Muslim Town, main muslim Rd,<br> Backside Darbar Mahal, Punjab 63100</p>
 
-                    <h3 class="font-bold text-lg mt-6 mb-4">Islamabad</h3>
-                    <p>
-                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
-                        Islamabad, Pakistan
-                    </p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4">New York</h3>
-                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
+                    <h3 class="font-bold text-lg mt-6 mb-4">Kentucky</h3>
+                    <p>171 Saint Mary, Kentucky,<br> Marion County, United States 40063</p>
                 </div>
 
                 <div>
                     <h3 class="font-bold text-lg mb-4">Menu</h3>
                     <ul>
                         <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
-                        <li class="mb-2"><a href="./About.html" class="hover:text-[#0ebab1]">About</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-gray-400">Certifications</a>
-                        </li>
+                        <li class="mb-2"><a href="./services.html" class="hover:text-[#0ebab1]">Services</a></li>
+                        <li class="mb-2"><a href="./portfolio.html" class="hover:text-[#0ebab1]">Portfolio</a></li>
+                        <li class="mb-2"><a href="./about.html" class="hover:text-[#0ebab1]">About</a></li>
                         <li class="mb-2"><a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
                     </ul>
                 </div>
@@ -396,7 +409,7 @@
                             <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
+                            <a href="./pages/WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
                         </li>
                         <li class="mb-2">
                             <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
@@ -419,134 +432,13 @@
                         </li>
                     </ul>
                 </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Enterprise Solutions</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
 
             <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
-                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
+                <p>Copyright © 2025 Bitzonic | All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-
-
-
-    <!-- <script>
-        const testimonials = [
-            {
-                text: "BitzonicR went above and beyond my expectations. I engaged them to make a mobile app for my clients to use, and they did a fantastic job! Great job Frank!",
-                name: "A. Rodriguez",
-                role: "Marketing Manager",
-                img: "../assets/testi-top-ico.png",
-            },
-            {
-                text: "Working with BitzonicR was a pleasure! They delivered our eCommerce website on time and exceeded expectations.",
-                name: "John Doe",
-                role: "Business Owner",
-                img: "../assets/testi-top-ico.png",
-            },
-            {
-                text: "Great communication and excellent results. Our new branding and app design look fantastic. Highly recommend them!",
-                name: "Sarah Lee",
-                role: "Creative Director",
-                img: "./assets/testi-top-ico.png",
-            },
-            {
-                text: "Amazing experience! They handled our project professionally and were responsive throughout the process.",
-                name: "Michael Smith",
-                role: "Product Manager",
-                img: "../assets/testi-top-ico.png",
-            },
-        ];
-
-        const slider = document.getElementById("testimonialSlider");
-        const dotsContainer1 = document.getElementById("testimonialDots");
-
-        // Generate testimonial slides dynamically
-        testimonials.forEach((t) => {
-            const slide = document.createElement("div");
-            slide.className =
-                "testimonial-slide min-w-full flex-shrink-0 flex flex-col items-center justify-center text-center px-4";
-            slide.innerHTML = `
-      <div class="md:max-w-[715px] max-w-[400px]">
-        <img src="${t.img}" alt="Qutation Icon">
-        <p class="text-[18px] font-medium my-6 max-w-[650px]">${t.text}</p>
-        <h3 class="text-[21px] text-[#0ebab1] font-bold uppercase ">${t.name}</h3>
-        <h4 class="text-[16px] text-[#676766] pt-2 uppercase">${t.role}</h4>      
-      </div>
-    `;
-            slider.appendChild(slide);
-        });
-
-        // Generate dots
-        testimonials.forEach((_, i) => {
-            const dot = document.createElement("button");
-            dot.className =
-                "w-[40px] h-[2px] bg-[#0ebab1] transition-all duration-300 mb-8 cursor-pointer";
-            if (i === 0) dot.classList.add("bg-main");
-            dot.dataset.index = i;
-            dotsContainer1.appendChild(dot);
-        });
-
-        let current = 0;
-        const total = testimonials.length;
-
-        function updateSlider() {
-            slider.style.transform = `translateX(-${current * 100}%)`;
-
-            // Update dot states
-            document.querySelectorAll("#testimonialDots button").forEach((dot, i) => {
-                dot.classList.toggle("bg-main", i === current);
-                dot.classList.toggle("bg-white", i !== current);
-            });
-        }
-
-        // Auto slide every 4 seconds
-        setInterval(() => {
-            current = (current + 1) % total;
-            updateSlider();
-        }, 4000);
-
-        // Dot navigation
-        dotsContainer1.addEventListener("click", (e) => {
-            if (e.target.tagName === "BUTTON") {
-                current = Number(e.target.dataset.index);
-                updateSlider();
-            }
-        });
-
-        updateSlider(); 
-
-    </script>.  -->
     <script src="../Js/services.js"></script>
 </body>
 

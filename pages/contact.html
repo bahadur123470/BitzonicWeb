@@ -2,489 +2,453 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- font family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- font awesome icon link  -->
-    <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
+  <!-- font awesome icon link  -->
+  <script src="https://kit.fontawesome.com/1cb7da3db8.js" crossorigin="anonymous"></script>
 
-    <!-- Tailwind Css -->
-    <link href="../output.css" rel="stylesheet">
+  <!-- Tailwind Css -->
+  <link href="../output.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <title>Contact</title>
-    <style>
-          body {
-            font-family: "Manrope", sans-serif;
-        }
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: "Manrope", sans-serif;
+    }
 
-        @layer utilities {
-            .scrollbar-hide::-webkit-scrollbar {
-                display: none;
-            }
+    @layer utilities {
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
 
-            .scrollbar-hide {
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-            }
-        }
-  html {
-     scroll-behavior: smooth;
-  }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
 
-  
-</style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
-     <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
+  <header class="bg-white sticky top-0 z-50 shadow-xl px-0">
     <nav aria-label="Global" class="max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 md:px-7 lg:px-0 xl:px-0">
-        <div class="flex items-center h-[80px]">
-            <div class="shrink-0 w-48">
-                <a href="../index.html" class="-m-1.5 p-1.5">
-                    <img src="../assets/logo.png" alt="" class="w-40 md:w-44 lg:w-48" />
-                </a>
-            </div>
-
-            <div class="flex lg:hidden ml-auto">
-                <button type="button" command="show-modal" commandfor="mobile-menu"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Open main menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                        aria-hidden="true" class="size-6">
-                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="hidden lg:flex flex-1 justify-center">
-                <div class="flex space-x-12">
-                    <a href="./services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
-                    <a href="./portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                    <a href="./about.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
-                    <a href="./contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
-                </div>
-            </div>
-
-            <div class="hidden lg:flex w-48 justify-end lg:mr-6">
-                <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch <span aria-hidden="true">&rarr;</span></a>
-            </div>
+      <div class="flex items-center h-[80px]">
+        <div class="shrink-0 w-48">
+          <a href="../index.html" class="-m-1.5 p-1.5">
+            <img src="../assets/logo.png" alt="" class="w-40 md:w-44 lg:w-48" />
+          </a>
         </div>
+
+        <div class="flex lg:hidden ml-auto">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hidden lg:flex flex-1 justify-center">
+          <div class="flex space-x-12">
+            <a href="./services.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+            <a href="./portfolio.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+            <a href="./about.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">About</a>
+            <a href="./contact.html" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex w-48 justify-end lg:mr-6">
+          <a href="#" class="text-xl font-semibold text-gray-900 hover:text-[#0ebab1] whitespace-nowrap">Get in Touch
+            <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
     </nav>
 
 
-        <el-dialog>
-            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-                <div tabindex="0" class="fixed inset-0 focus:outline-none">
-                    <el-dialog-panel
-                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                        <div class="flex items-center justify-between max-h-30">
-                            <a href="#" class="-m-1.5 p-1.5">
-                                <span class="sr-only">Your Company</span>
-                                <img src="../assets/logo1-removebg-preview.png" alt="" class="max-w-40 " />
-                            </a>
-                            <button type="button" command="close" commandfor="mobile-menu"
-                                class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                                <span class="sr-only">Close menu</span>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    data-slot="icon" aria-hidden="true" class="size-6">
-                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
+    <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between max-h-30">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="../assets/logo1-removebg-preview.png" alt="" class="max-w-40 " />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                  aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
 
-                        <div class="mt-6 flow-root">
-                            <div class="-my-6 divide-y divide-gray-500/10">
-                                <div class="space-y-2 py-6 flex flex-col">
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6 flex flex-col">
 
-                                    <a href="./services.html"
-                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
-                                    <a href="./portfolio.html"
-                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
-                                    <a href="./about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
-                                    <a href="./contact.html"
-                                        class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
-                                </div>
-                                <div class="py-6">
-                                    <a href="./contact.html"
-                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
-                                    <button class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get in Touch</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </el-dialog-panel>
+                  <a href="./services.html"
+                    class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Services</a>
+                  <a href="./portfolio.html"
+                    class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Portfolio</a>
+                  <a href="./about.html" class="text-sm/6 font-semibold hover:text-[#0ebab1] text-gray-900">About</a>
+                  <a href="./contact.html"
+                    class="text-sm/6 font-semibold text-gray-900 hover:text-[#0ebab1]">Contact</a>
                 </div>
-            </dialog>
-        </el-dialog>
-    </header>
+                <div class="py-6">
+                  <a href="./contact.html"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900">
+                    <button
+                      class="bg-[#0ebab1] text-white hover:bg-white border border-transparent hover:border-black hover:text-black px-4 py-2 rounded-md cursor-pointer">Get
+                      in Touch</button></a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
 
-    <!-- Hero section -->
+  <!-- Hero section -->
 
-    <main class=""> <!-- Added padding-top here -->
+  <main class=""> <!-- Added padding-top here -->
 
-      <section class="px-4 sm:px-6 md:px-8 lg:px-16 pt-8 scroll-mt-20 py-10" id="contact">
-  <div class="flex flex-col lg:flex-row items-start justify-between gap-10">
-    <!-- Left Content -->
-    <div class="flex-1">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-raleway mb-4 sm:mb-6">
-        Let's discuss your project
-      </h1>
-      <p class="text-xs sm:text-sm md:text-base font-raleway leading-relaxed max-w-full lg:max-w-[550px] font-medium">
-        We are committed to understanding your requirements and crafting a tailored solution that aligns with your goals.
-        <br><br>
-        Enter your details and someone from our team will reach out to find a time to connect with you.
-      </p>
-        <img src="../assets/contact.png" alt="" class="w-full mt-20 m-auto ">
-    </div>
-
-    <!-- Form -->
-    <div class="flex-1 w-full max-w-full lg:max-w-[580px] text-sm sm:text-base">
-      <form id="contactForm" novalidate class="space-y-4">
-        <!-- First Name -->
-        <div>
-          <label for="firstname" class="block mb-1">First Name <span class="text-red-500 font-bold">*</span></label>
-          <input type="text" name="firstname" id="firstname"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-          <p class="text-red-500 text-sm hidden mt-1">Please enter your first name.</p>
+    <section class="px-4 sm:px-6 md:px-8 lg:px-16 pt-8 scroll-mt-20 py-10" id="contact">
+      <div class="flex flex-col lg:flex-row items-start justify-between gap-10">
+        <!-- Left Content -->
+        <div class="flex-1">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-black font-raleway mb-4 sm:mb-6">
+            Let's discuss your project
+          </h1>
+          <p
+            class="text-xs sm:text-sm md:text-base font-raleway leading-relaxed max-w-full lg:max-w-[550px] font-medium">
+            We are committed to understanding your requirements and crafting a tailored solution that aligns with your
+            goals.
+            <br><br>
+            Enter your details and someone from our team will reach out to find a time to connect with you.
+          </p>
+          <img src="../assets/contact.png" alt="" class="w-full mt-20 m-auto ">
         </div>
 
-        <!-- Last Name -->
-        <div>
-          <label for="lastname" class="block mb-1">Last Name <span class="text-red-500 font-bold">*</span></label>
-          <input type="text" name="lastname" id="lastname"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-          <p class="text-red-500 text-sm hidden mt-1">Please enter your last name.</p>
+        <!-- Form -->
+        <div class="flex-1 w-full max-w-full lg:max-w-[580px] text-sm sm:text-base">
+          <form id="contactForm" novalidate class="space-y-4">
+            <!-- First Name -->
+            <div>
+              <label for="firstname" class="block mb-1">First Name <span class="text-red-500 font-bold">*</span></label>
+              <input type="text" name="firstname" id="firstname"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+              <p class="text-red-500 text-sm hidden mt-1">Please enter your first name.</p>
+            </div>
+
+            <!-- Last Name -->
+            <div>
+              <label for="lastname" class="block mb-1">Last Name <span class="text-red-500 font-bold">*</span></label>
+              <input type="text" name="lastname" id="lastname"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+              <p class="text-red-500 text-sm hidden mt-1">Please enter your last name.</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block mb-1">Email <span class="text-red-500 font-bold">*</span></label>
+              <input type="email" name="email" id="email"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+              <p class="text-red-500 text-sm hidden mt-1">Please enter a valid email address.</p>
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block mb-1">Phone Number <span class="text-red-500 font-bold">*</span></label>
+              <div class="flex gap-2 flex-col sm:flex-row">
+                <select id="countryCode"
+                  class="w-full sm:w-32 border border-gray-400 bg-[#f5f8fa] py-2 px-3 rounded-sm focus:ring-1 focus:ring-blue-500 outline-none">
+                  <option value="+1">🇺🇸 +1 (USA)</option>
+                  <option value="+44">🇬🇧 +44 (UK)</option>
+                  <option value="+92" selected>🇵🇰 +92 (Pakistan)</option>
+                  <option value="+91">🇮🇳 +91 (India)</option>
+                  <option value="+61">🇦🇺 +61 (Australia)</option>
+                  <option value="+1">🇨🇦 +1 (Canada)</option>
+                  <option value="+81">🇯🇵 +81 (Japan)</option>
+                  <option value="+49">🇩🇪 +49 (Germany)</option>
+                  <option value="+33">🇫🇷 +33 (France)</option>
+                  <option value="+39">🇮🇹 +39 (Italy)</option>
+                  <option value="+34">🇪🇸 +34 (Spain)</option>
+                  <option value="+7">🇷🇺 +7 (Russia)</option>
+                  <option value="+86">🇨🇳 +86 (China)</option>
+                  <option value="+60">🇲🇾 +60 (Malaysia)</option>
+                  <option value="+62">🇮🇩 +62 (Indonesia)</option>
+                  <option value="+63">🇵🇭 +63 (Philippines)</option>
+                  <option value="+65">🇸🇬 +65 (Singapore)</option>
+                  <option value="+66">🇹🇭 +66 (Thailand)</option>
+                  <option value="+90">🇹🇷 +90 (Turkey)</option>
+                  <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
+                  <option value="+971">🇦🇪 +971 (UAE)</option>
+                  <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
+                  <option value="+974">🇶🇦 +974 (Qatar)</option>
+                  <option value="+973">🇧🇭 +973 (Bahrain)</option>
+                  <option value="+968">🇴🇲 +968 (Oman)</option>
+                  <option value="+965">🇰🇼 +965 (Kuwait)</option>
+                  <option value="+20">🇪🇬 +20 (Egypt)</option>
+                  <option value="+27">🇿🇦 +27 (South Africa)</option>
+                  <option value="+254">🇰🇪 +254 (Kenya)</option>
+                  <option value="+234">🇳🇬 +234 (Nigeria)</option>
+                  <option value="+55">🇧🇷 +55 (Brazil)</option>
+                  <option value="+52">🇲🇽 +52 (Mexico)</option>
+                  <option value="+54">🇦🇷 +54 (Argentina)</option>
+                  <option value="+64">🇳🇿 +64 (New Zealand)</option>
+                  <option value="+353">🇮🇪 +353 (Ireland)</option>
+                  <option value="+41">🇨🇭 +41 (Switzerland)</option>
+                  <option value="+46">🇸🇪 +46 (Sweden)</option>
+                  <option value="+47">🇳🇴 +47 (Norway)</option>
+                  <option value="+31">🇳🇱 +31 (Netherlands)</option>
+                  <option value="+32">🇧🇪 +32 (Belgium)</option>
+                  <option value="+43">🇦🇹 +43 (Austria)</option>
+                  <option value="+48">🇵🇱 +48 (Poland)</option>
+                  <option value="+420">🇨🇿 +420 (Czechia)</option>
+                  <option value="+358">🇫🇮 +358 (Finland)</option>
+                  <option value="+370">🇱🇹 +370 (Lithuania)</option>
+                  <option value="+371">🇱🇻 +371 (Latvia)</option>
+                  <option value="+372">🇪🇪 +372 (Estonia)</option>
+                </select>
+
+                <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter phone number"
+                  class="flex-1 border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+              </div>
+              <p class="text-red-500 text-sm hidden mt-1">Please enter a valid phone number.</p>
+            </div>
+
+            <!-- Budget -->
+            <div>
+              <label class="block mb-1">Budget <span class="text-red-500 font-bold">*</span></label>
+              <select id="budget"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+                <option value="">Select Budget</option>
+                <option value="Under $1,000">Under $1,000</option>
+                <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="Above $10,000">Above $10,000</option>
+              </select>
+              <p class="text-red-500 text-sm hidden mt-1">Please select your budget.</p>
+            </div>
+
+            <!-- Company -->
+            <div>
+              <label class="block mb-1">Company Name <span class="text-red-500 font-bold">*</span></label>
+              <input type="text" name="company" id="company"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+              <p class="text-red-500 text-sm hidden mt-1">Please enter your company name.</p>
+            </div>
+
+            <!-- Region -->
+            <div>
+              <label class="block mb-1">Region <span class="text-red-500 font-bold">*</span></label>
+              <select id="region"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+                <option value="">Select Region</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="Middle East">Middle East</option>
+              </select>
+              <p class="text-red-500 text-sm hidden mt-1">Please select your region.</p>
+            </div>
+
+            <!-- Services -->
+            <div>
+              <label class="block mb-1">Services you're looking for <span
+                  class="text-red-500 font-bold">*</span></label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="Custom Software Development" class="w-4 h-4">
+                  <span>Custom Software Development</span>
+                </label>
+                <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="Web Development" class="w-4 h-4">
+                  <span>Website Development</span>
+                </label>
+                <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="Mobile App Development" class="w-4 h-4">
+                  <span>Mobile App Development</span>
+                </label>
+                <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>SaaS Development</span>
+                </label>
+                <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>UI / UX Designing</span>
+                </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>Graphic Designing</span>
+                </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>Digital Marketing</span>
+                </label>
+                </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>Social Media Marketing</span>
+                </label>
+                </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>SEO </span>
+                </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
+                  <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
+                  <span>E-Commerce</span>
+                </label>
+                </label>
+              </div>
+              <p class="text-red-500 text-sm hidden mt-1">Please select at least one service.</p>
+            </div>
+
+            <!-- Project Details -->
+            <div>
+              <label class="block mb-1">Project Details <span class="text-red-500 font-bold">*</span></label>
+              <textarea id="project" rows="3"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200"></textarea>
+              <p class="text-red-500 text-sm hidden mt-1">Please enter your project details.</p>
+            </div>
+
+            <!-- Job -->
+            <div>
+              <label class="block mb-1">I am looking for a job at Bitzonic</label>
+              <select id="job"
+                class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+                <option value="">Please Select</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit"
+              class="w-full bg-[#0ebab2] border px-6 py-2 text-white font-medium cursor-pointer rounded-sm hover:bg-black  transition duration-300 mt-4">
+              Submit
+            </button>
+          </form>
         </div>
+      </div>
+    </section>
 
-        <!-- Email -->
-        <div>
-          <label for="email" class="block mb-1">Email <span class="text-red-500 font-bold">*</span></label>
-          <input type="email" name="email" id="email"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-          <p class="text-red-500 text-sm hidden mt-1">Please enter a valid email address.</p>
-        </div>
+  </main>
 
-        <!-- Phone -->
-        <div>
-          <label class="block mb-1">Phone Number <span class="text-red-500 font-bold">*</span></label>
-          <div class="flex gap-2 flex-col sm:flex-row">
-           <select
-  id="countryCode"
-  class="w-full sm:w-32 border border-gray-400 bg-[#f5f8fa] py-2 px-3 rounded-sm focus:ring-1 focus:ring-blue-500 outline-none"
->
-  <option value="+1">🇺🇸 +1 (USA)</option>
-  <option value="+44">🇬🇧 +44 (UK)</option>
-  <option value="+92" selected>🇵🇰 +92 (Pakistan)</option>
-  <option value="+91">🇮🇳 +91 (India)</option>
-  <option value="+61">🇦🇺 +61 (Australia)</option>
-  <option value="+1">🇨🇦 +1 (Canada)</option>
-  <option value="+81">🇯🇵 +81 (Japan)</option>
-  <option value="+49">🇩🇪 +49 (Germany)</option>
-  <option value="+33">🇫🇷 +33 (France)</option>
-  <option value="+39">🇮🇹 +39 (Italy)</option>
-  <option value="+34">🇪🇸 +34 (Spain)</option>
-  <option value="+7">🇷🇺 +7 (Russia)</option>
-  <option value="+86">🇨🇳 +86 (China)</option>
-  <option value="+60">🇲🇾 +60 (Malaysia)</option>
-  <option value="+62">🇮🇩 +62 (Indonesia)</option>
-  <option value="+63">🇵🇭 +63 (Philippines)</option>
-  <option value="+65">🇸🇬 +65 (Singapore)</option>
-  <option value="+66">🇹🇭 +66 (Thailand)</option>
-  <option value="+90">🇹🇷 +90 (Turkey)</option>
-  <option value="+94">🇱🇰 +94 (Sri Lanka)</option>
-  <option value="+971">🇦🇪 +971 (UAE)</option>
-  <option value="+966">🇸🇦 +966 (Saudi Arabia)</option>
-  <option value="+974">🇶🇦 +974 (Qatar)</option>
-  <option value="+973">🇧🇭 +973 (Bahrain)</option>
-  <option value="+968">🇴🇲 +968 (Oman)</option>
-  <option value="+965">🇰🇼 +965 (Kuwait)</option>
-  <option value="+20">🇪🇬 +20 (Egypt)</option>
-  <option value="+27">🇿🇦 +27 (South Africa)</option>
-  <option value="+254">🇰🇪 +254 (Kenya)</option>
-  <option value="+234">🇳🇬 +234 (Nigeria)</option>
-  <option value="+55">🇧🇷 +55 (Brazil)</option>
-  <option value="+52">🇲🇽 +52 (Mexico)</option>
-  <option value="+54">🇦🇷 +54 (Argentina)</option>
-  <option value="+64">🇳🇿 +64 (New Zealand)</option>
-  <option value="+353">🇮🇪 +353 (Ireland)</option>
-  <option value="+41">🇨🇭 +41 (Switzerland)</option>
-  <option value="+46">🇸🇪 +46 (Sweden)</option>
-  <option value="+47">🇳🇴 +47 (Norway)</option>
-  <option value="+31">🇳🇱 +31 (Netherlands)</option>
-  <option value="+32">🇧🇪 +32 (Belgium)</option>
-  <option value="+43">🇦🇹 +43 (Austria)</option>
-  <option value="+48">🇵🇱 +48 (Poland)</option>
-  <option value="+420">🇨🇿 +420 (Czechia)</option>
-  <option value="+358">🇫🇮 +358 (Finland)</option>
-  <option value="+370">🇱🇹 +370 (Lithuania)</option>
-  <option value="+371">🇱🇻 +371 (Latvia)</option>
-  <option value="+372">🇪🇪 +372 (Estonia)</option>
-</select>
 
-            <input type="number" name="phonenumber" id="phonenumber" placeholder="Enter phone number"
-              class="flex-1 border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
+  <footer class=" py-10 bg-black text-white    ">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold mb-8">LET'S CREATE SOMETHING
+          <span class="text-[#0ebab1] text-4xl">Together!</span>
+        </h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span>+92 21 32624423</span>
           </div>
-          <p class="text-red-500 text-sm hidden mt-1">Please enter a valid phone number.</p>
-        </div>
-
-        <!-- Budget -->
-        <div>
-          <label class="block mb-1">Budget <span class="text-red-500 font-bold">*</span></label>
-          <select id="budget"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-            <option value="">Select Budget</option>
-            <option value="Under $1,000">Under $1,000</option>
-            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
-            <option value="$5,000 - $10,000">$5,000 - $10,000</option>
-            <option value="Above $10,000">Above $10,000</option>
-          </select>
-          <p class="text-red-500 text-sm hidden mt-1">Please select your budget.</p>
-        </div>
-
-        <!-- Company -->
-        <div>
-          <label class="block mb-1">Company Name <span class="text-red-500 font-bold">*</span></label>
-          <input type="text" name="company" id="company"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-          <p class="text-red-500 text-sm hidden mt-1">Please enter your company name.</p>
-        </div>
-
-        <!-- Region -->
-        <div>
-          <label class="block mb-1">Region <span class="text-red-500 font-bold">*</span></label>
-          <select id="region"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-            <option value="">Select Region</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="North America">North America</option>
-            <option value="Middle East">Middle East</option>
-          </select>
-          <p class="text-red-500 text-sm hidden mt-1">Please select your region.</p>
-        </div>
-
-        <!-- Services -->
-        <div>
-          <label class="block mb-1">Services you're looking for <span class="text-red-500 font-bold">*</span></label>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="Custom Software Development" class="w-4 h-4">
-              <span>Custom Software Development</span>
-            </label>
-            <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="Web Development" class="w-4 h-4">
-              <span>Website Development</span>
-            </label>
-            <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="Mobile App Development" class="w-4 h-4">
-              <span>Mobile App Development</span>
-            </label>
-            <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>SaaS Development</span>
-            </label>
-            <label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>UI / UX Designing</span>
-            </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>Graphic Designing</span>
-            </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>Digital Marketing</span>
-            </label>
-             </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>Social Media Marketing</span>
-            </label>
-             </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>SEO </span>
-               </label><label class="flex items-center space-x-2 px-2 py-1 cursor-pointer">
-              <input type="checkbox" name="services" value="AR/VR" class="w-4 h-4">
-              <span>E-Commerce</span>
-            </label>
-            </label>
+          <div class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>official@bitzonic.com</span>
           </div>
-          <p class="text-red-500 text-sm hidden mt-1">Please select at least one service.</p>
         </div>
+      </div>
 
-        <!-- Project Details -->
+      <div class="flex justify-center mb-8 gap-6">
+        <a href="#" class=" hover:text-[#007bff]">
+          <i class="fa-brands fa-facebook-f text-2xl"></i>
+        </a>
+        <a href="#" class=" hover:text-[#dc3545]">
+          <i class="fa-brands fa-instagram text-2xl"></i>
+        </a>
+        <a href="#" class=" hover:text-[#6610f2]">
+          <i class="fa-brands fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="#" class=" hover:text-[#007bff]">
+          <i class="fa-brands fa-twitter text-2xl"></i>
+        </a>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm leading-relaxed ">
         <div>
-          <label class="block mb-1">Project Details <span class="text-red-500 font-bold">*</span></label>
-          <textarea id="project" rows="3"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200"></textarea>
-          <p class="text-red-500 text-sm hidden mt-1">Please enter your project details.</p>
+          <h3 class="font-bold text-lg mb-4">Bahawalpur</h3>
+          <p>Muslim Town, main muslim Rd,<br> Backside Darbar Mahal, Punjab 63100</p>
+
+          <h3 class="font-bold text-lg mt-6 mb-4">Kentucky</h3>
+          <p>171 Saint Mary, Kentucky,<br> Marion County, United States 40063</p>
         </div>
 
-        <!-- Job -->
         <div>
-          <label class="block mb-1">I am looking for a job at Bitzonic</label>
-          <select id="job"
-            class="w-full border border-gray-400 py-2 px-3 bg-[#f5f8fa] rounded-sm outline-none focus:ring-1 focus:ring-blue-500 transition duration-200">
-            <option value="">Please Select</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
+          <h3 class="font-bold text-lg mb-4">Menu</h3>
+          <ul>
+            <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
+            <li class="mb-2"><a href="./services.html" class="hover:text-[#0ebab1]">Services</a></li>
+            <li class="mb-2"><a href="./portfolio.html" class="hover:text-[#0ebab1]">Portfolio</a></li>
+            <li class="mb-2"><a href="./about.html" class="hover:text-[#0ebab1]">About</a></li>
+            <li class="mb-2"><a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
+          </ul>
         </div>
 
-        <!-- Submit -->
-        <button type="submit"
-          class="w-full bg-[#0ebab2] border px-6 py-2 text-white font-medium cursor-pointer rounded-sm hover:bg-black  transition duration-300 mt-4">
-          Submit
-        </button>
-      </form>
+        <div>
+          <h3 class="font-bold text-lg mb-4">Software Solutions & Services</h3>
+          <ul>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
+            </li>
+            <li class="mb-2">
+              <a href="./pages/WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Business Development</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Digital Marketing</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Graphic Designing</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Software-as-a-Service</a>
+            </li>
+            <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">SEO Expert</a></li>
+            <li class="mb-2">
+              <a href="#" class="hover:text-[#0ebab1]">Figma Designing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
+        <p>Copyright © 2025 Bitzonic | All rights reserved.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-    </main>
-
-
-    <footer class="bg-black text-white py-10">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold mb-4">LET'S CREATE SOMETHING
-                    <span class="text-[#0ebab1] text-4xl">Together!</span>
-                </h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-                    <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <span>+92 21 32624423</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <span>official@bitzonic.com</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-center mb-8 gap-6">
-                <a href="#" class=" hover:text-[#007bff]">
-                    <i class="fa-brands fa-facebook-f text-2xl"></i>
-                </a>
-                <a href="#" class=" hover:text-[#dc3545]">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
-                </a>
-                <a href="#" class=" hover:text-[#6610f2]">
-                    <i class="fa-brands fa-linkedin-in text-2xl"></i>
-                </a>
-                <a href="#" class=" hover:text-[#007bff]">
-                    <i class="fa-brands fa-twitter text-2xl"></i>
-                </a>
-
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm leading-relaxed">
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Karachi</h3>
-                    <p>Schon Centre, I.I. Chundrigar Rd, Saddar, Karachi City, Sindh 74000</p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4">Islamabad</h3>
-                    <p>
-                        M-13, Emirates Plaza, 4th Floor, F-7 Markaz, Jinnah Supermarket,
-                        Islamabad, Pakistan
-                    </p>
-
-                    <h3 class="font-bold text-lg mt-6 mb-4">New York</h3>
-                    <p>1441 Broadway, #3011, New York, NY 10018, United States</p>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Menu</h3>
-                    <ul>
-                        <li class="mb-2"><a href="../index.html" class="hover:text-[#0ebab1]">Home</a></li>
-                        <li class="mb-2"><a href="./About.html" class="hover:text-[#0ebab1]">About</a></li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">Partner</a></li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-gray-400">Certifications</a>
-                        </li>
-                        <li class="mb-2"><a href="./Contact.html" class="hover:text-[#0ebab1]">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Software Solutions & Services</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Artificial Intelligence</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="./WebDevelopment.html" class="hover:text-[#0ebab1]">Website Development</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Mobile Application Development</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Business Development</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Graphic Designing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Software-as-a-Service</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="hover:text-[#0ebab1]">SEO Expert</a></li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Figma Designing</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-lg mb-4">Enterprise Solutions</h3>
-                    <ul>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Data Center Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">IT Consultancy & Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Managed Printing Services</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Power Protection Solutions</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Digital Media Marketing</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Security & Surveillance</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Server Storage</a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="#" class="hover:text-[#0ebab1]">Document Management System</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
-                <p>Copyright © 2023 Bitzonic | All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+  </footer>
 
 </body>
 
