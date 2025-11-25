@@ -165,10 +165,10 @@ function createTestimonialSlides() {
         slide.className =
             "testimonial-slide min-w-full flex-shrink-0 flex flex-col items-center justify-center text-center px-4";
         slide.innerHTML = `
-            <div class="md:max-w-[715px] max-w-[400px]">
+            <div class="md:max-w-[715px] max-w-[400px] mb-4">
                 <img src="${t.img}" alt="Quotation Icon" class=""> <!-- Added mx-auto to center image -->
-                <p class="text-[18px] font-medium my-6 max-w-[650px]">${t.text}</p>
-                <h3 class="text-[21px] text-[#0ebab1] font-bold uppercase ">${t.name}</h3>
+                <p class="text-1xl md:text-2xl font-medium mx-6 my-6 max-w-[650px]">${t.text}</p>
+                <h3 class="text-2xl md:text-3xl text-[#0ebab1] font-bold uppercase ">${t.name}</h3>
             </div>
         `;
         testimonialSlider.appendChild(slide);
